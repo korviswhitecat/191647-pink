@@ -2,11 +2,164 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>PINK</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="main-header">
+      <div class="main-logo__logo">
+        <img src="img/logo.svg" alt="Pink">
+      </div>
+      <nav class="main-nav   main-nav--closed">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__nav-list">
+            <li class="main-nav__nav-item">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__nav-item">
+              <a href="#">Фотографии</a>
+            </li>
+            <li class="main-nav__nav-item">
+              <a href="#">Конкурс</a>
+            </li>
+            <li class="main-nav__nav-item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="download-offer">
+        <img src="img/download-offer.jpg" alt="Скачать Pink">
+        <div class="download-offer__wrapper">
+          <a class="download-offer__link" href="#">Скачать приложение</a>
+          <div class="download-offer__option  download-offer__option--ios">
+            Скачать для iOS
+          </div>
+          <div class="download-offer__option  download-offer__option--android">
+            Скачать для Android
+          </div>
+          <div class="download-offer__option  download-offer__option--windows">
+            Скачать для Windows
+          </div>
+          <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
+      </div>
+      <div class="application-advertisement">
+        <p>Устали от серости мегаполиса?</p>
+        <p>Нам есть, что вам предложить!</p>
+      </div>
+      <div class="application-features">
+        <ul class=application-features__list>
+          <li class="application-features__item">
+            <span class="application-features__item-title">Поднимает настроение</span>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+          <li class="application-features__item">
+            <span class="application-features__item-title">Меняет мир вокруг</span>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+          <li class="application-features__item">
+            <span class="application-features__item-title">Заводит новых друзей</span>
+            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+        <img src="img/application-features.jpg" alt="Всем привет!">
+      </div>
+      <div class="application-feedback">
+        <div class="application-feedback__wrapper  slider">
+          <input class="slider__input" type="radio" name="application-feedback" id="application-feedback-input-1" checked>
+          <input class="slider__input" type="radio" name="application-feedback" id="application-feedback-input-2">
+          <input class="slider__input" type="radio" name="application-feedback" id="application-feedback-input-3">
+          <ul class="application-feedback__list">
+            <li class="application-feedback__item">
+              <span class="application-feedback__item-title  slider__item"></span>
+              <p></p>
+            </li>
+            <li class="application-feedback__item  slider__item">
+              <span class="application-feedback__item-title">Николай Петров</span>
+              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+            </li>
+            <li class="application-feedback__item  slider__item">
+              <span class="application-feedback__item-title">Здесь может быть ваше имя</span>
+              <p>«Напишите отзыв»</p>
+            </li>
+            <li class="application-feedback__item  slider__item">
+              <span class="application-feedback__item-title">Здесь может быть ваше имя</span>
+              <p>«Напишите отзыв»</p>
+            </li>
+          </ul>
+          <div class="application-feedback__toggles  slider__toggles">
+           <label class="slider__toggle" for="application-feedback-input-1">1</label>
+           <label class="slider__toggle" for="application-feedback-input-2">2</label>
+           <label class="slider__toggle" for="application-feedback-input-3">3</label>
+          </div>
+        </div>
+      </div>
+      <div class="application-price">
+        <div class="application-price__wrapper  slider">
+          <input class="slider__input" type="radio" name="application-price" id="application-price-input-1">
+          <input class="slider__input" type="radio" name="application-price" id="application-price-input-2" checked>
+          <input class="slider__input" type="radio" name="application-price" id="application-price-input-3">
+          <div class="application-price__options">
+            <div class="application-price__tariff" id="application-price-tariff1">
+              <div class="application-price__tariff-title">
+                <b>База</b>
+                1,99 USD
+              </div>
+              <p class="application-price__tariff-description  application-price__tariff-description--included">Розовый фильтр</p>
+              <p class="application-price__tariff-description  application-price__tariff-description--not-included">Смайлики</p>
+              <p class="application-price__tariff-description  application-price__tariff-description--not-included">Комментарии</p>
+            </div>
+            <div class="application-price__tariff" id="application-price-tariff2">
+              <div class="application-price__tariff-title  application-price__tariff-title--hit">
+                <b>Стандарт</b>
+                3,99 USD
+              </div>
+              <p class="application-price__tariff-description  application-price__tariff-description--included">Розовый фильтр</p>
+              <p class="application-price__tariff-description  application-price__tariff-description--included">Смайлики</p>
+              <p class="application-price__tariff-description  application-price__tariff-description--not-included">Комментарии</p>
+            </div>
+            <div class="application-price__tariff" id="application-price-tariff3">
+              <div class="application-price__tariff-title">
+                <b>Анлим</b>
+                9,99 USD
+              </div>
+              <p class="application-price__tariff-description  application-price__tariff-description--included">Розовый фильтр</p>
+              <p class="application-price__tariff-description  application-price__tariff-description--included">Смайлики</p>
+              <p class="application-price__tariff-description  application-price__tariff-description--included">Комментарии</p>
+            </div>
+          </div>
+          <div class="application-price__toggles  slider__toggles">
+           <label class="slider__toggle" for="application-feedback-input-1">1</label>
+           <label class="slider__toggle" for="application-feedback-input-2">2</label>
+           <label class="slider__toggle" for="application-feedback-input-3">3</label>
+          </div>
+        </div>
+      </div>
+      <div class="contacts">
+        <div class="contacts__title">
+          Остались вопросы? Свяжитесь с нами!
+        </div>
+        <div class="contacts__options">
+          <span class="contats__options-title">Звоните:</span>
+          <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts__options">
+          <span class="contats__options-title">Пишите:</span>
+          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts__options">
+          <span class="contats__options-title">Приезжайте в гости:</span>
+        <p>ул. Большая Конюшенная, 19/8</p>
+        </div>
+        <div class="contacts__map">
+          <img src="img/contacts-map.jpg" alt="Как нас найти">
+        </div>
+      </div>
+    </main>
   </body>
 </html>
