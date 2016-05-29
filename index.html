@@ -6,23 +6,23 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-logo__logo">
+      <div class="main-header__logo">
         <img src="img/logo.svg" alt="Pink">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
       </div>
       <nav class="main-nav   main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__nav-list">
-            <li class="main-nav__nav-item">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a>Главная</a>
             </li>
-            <li class="main-nav__nav-item">
-              <a href="#">Фотографии</a>
+            <li class="main-nav__item">
+              <a href="photo.html">Фотографии</a>
             </li>
-            <li class="main-nav__nav-item">
-              <a href="#">Конкурс</a>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
             </li>
-            <li class="main-nav__nav-item">
+            <li class="main-nav__item">
               <a href="#">HTML Academy</a>
             </li>
           </ul>
@@ -47,96 +47,92 @@
           </p>
         </div>
       </div>
-      <div class="application-advertisement">
-        <p>Устали от серости мегаполиса?</p>
-        <p>Нам есть, что вам предложить!</p>
+      <div class="advertisement">
+        <p class="advertisement--descr">Устали от серости мегаполиса?</p>
+        <p class="advertisement--descr">Нам есть, что вам предложить!</p>
       </div>
-      <div class="application-features">
-        <ul class=application-features__list>
-          <li class="application-features__item">
-            <span class="application-features__item-title">Поднимает настроение</span>
-            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+      <div class="features">
+        <ul class="features__list">
+          <li class="features__item">
+            <span class="features__item-title">Поднимает настроение</span>
+            <p class="features__item-descr">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
           </li>
-          <li class="application-features__item">
-            <span class="application-features__item-title">Меняет мир вокруг</span>
-            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          <li class="features__item">
+            <span class="features__item-title">Меняет мир вокруг</span>
+            <p class="features__item-descr">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
           </li>
-          <li class="application-features__item">
-            <span class="application-features__item-title">Заводит новых друзей</span>
-            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          <li class="features__item">
+            <span class="features__item-title">Заводит новых друзей</span>
+            <p class="features__item-descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img src="img/application-features.jpg" alt="Всем привет!">
+        <img src="img/features.jpg" alt="Всем привет!">
       </div>
-      <div class="application-feedback">
-        <div class="application-feedback__wrapper  slider">
-          <input class="slider__input" type="radio" name="application-feedback" id="application-feedback-input-1" checked>
-          <input class="slider__input" type="radio" name="application-feedback" id="application-feedback-input-2">
-          <input class="slider__input" type="radio" name="application-feedback" id="application-feedback-input-3">
-          <ul class="application-feedback__list">
-            <li class="application-feedback__item">
-              <span class="application-feedback__item-title  slider__item"></span>
-              <p></p>
-            </li>
-            <li class="application-feedback__item  slider__item">
-              <span class="application-feedback__item-title">Николай Петров</span>
-              <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+      <div class="feedback">
+        <div class="feedback__wrapper  slider">
+          <input class="slider__input" type="radio" name="feedback" id="feedback-input-1" checked>
+          <input class="slider__input" type="radio" name="feedback" id="feedback-input-2">
+          <input class="slider__input" type="radio" name="feedback" id="feedback-input-3">
+          <ul class="feedback__list">
+            <li class="feedback__item  slider__item">
+              <span class="feedback__item-title">Николай Петров</span>
+              <p class="feedback__item-descr">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="application-feedback__item  slider__item">
-              <span class="application-feedback__item-title">Здесь может быть ваше имя</span>
-              <p>«Напишите отзыв»</p>
+            <li class="feedback__item  slider__item">
+              <span class="feedback__item-title">Здесь может быть ваше имя</span>
+              <p class="feedback__item-descr">«Напишите отзыв»</p>
             </li>
-            <li class="application-feedback__item  slider__item">
-              <span class="application-feedback__item-title">Здесь может быть ваше имя</span>
-              <p>«Напишите отзыв»</p>
+            <li class="feedback__item  slider__item">
+              <span class="feedback__item-title">Здесь может быть ваше имя</span>
+              <p class="feedback__item-descr">«Напишите отзыв»</p>
             </li>
           </ul>
-          <div class="application-feedback__toggles  slider__toggles">
-           <label class="slider__toggle" for="application-feedback-input-1">1</label>
-           <label class="slider__toggle" for="application-feedback-input-2">2</label>
-           <label class="slider__toggle" for="application-feedback-input-3">3</label>
+          <div class="feedback__toggles  slider__toggles">
+           <label class="slider__toggle" for="feedback-input-1">1</label>
+           <label class="slider__toggle" for="feedback-input-2">2</label>
+           <label class="slider__toggle" for="feedback-input-3">3</label>
           </div>
         </div>
       </div>
-      <div class="application-price">
-        <div class="application-price__wrapper  slider">
-          <input class="slider__input" type="radio" name="application-price" id="application-price-input-1">
-          <input class="slider__input" type="radio" name="application-price" id="application-price-input-2" checked>
-          <input class="slider__input" type="radio" name="application-price" id="application-price-input-3">
-          <div class="application-price__options">
-            <div class="application-price__tariff" id="application-price-tariff1">
-              <div class="application-price__tariff-title">
+      <div class="price">
+        <div class="price__wrapper  slider">
+          <input class="slider__input" type="radio" name="price" id="price-input-1">
+          <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
+          <input class="slider__input" type="radio" name="price" id="price-input-3">
+          <div class="price__options">
+            <div class="price__tariff" id="price-tariff1">
+              <div class="price__tariff-title">
                 <b>База</b>
                 1,99 USD
               </div>
-              <p class="application-price__tariff-description  application-price__tariff-description--included">Розовый фильтр</p>
-              <p class="application-price__tariff-description  application-price__tariff-description--not-included">Смайлики</p>
-              <p class="application-price__tariff-description  application-price__tariff-description--not-included">Комментарии</p>
+              <p class="price__tariff-descr  price__tariff-descr--incl">Розовый фильтр</p>
+              <p class="price__tariff-descr  price__tariff-descr--not-incl">Смайлики</p>
+              <p class="price__tariff-descr  price__tariff-descr--not-incl">Комментарии</p>
             </div>
-            <div class="application-price__tariff" id="application-price-tariff2">
-              <div class="application-price__tariff-title  application-price__tariff-title--hit">
+            <div class="price__tariff" id="price-tariff2">
+              <div class="price__tariff-title  price__tariff-title--hit">
                 <b>Стандарт</b>
                 3,99 USD
               </div>
-              <p class="application-price__tariff-description  application-price__tariff-description--included">Розовый фильтр</p>
-              <p class="application-price__tariff-description  application-price__tariff-description--included">Смайлики</p>
-              <p class="application-price__tariff-description  application-price__tariff-description--not-included">Комментарии</p>
+              <p class="price__tariff-descr  price__tariff-descr--incl">Розовый фильтр</p>
+              <p class="price__tariff-descr  price__tariff-descr--incl">Смайлики</p>
+              <p class="price__tariff-descr  price__tariff-descr--not-incl">Комментарии</p>
             </div>
-            <div class="application-price__tariff" id="application-price-tariff3">
-              <div class="application-price__tariff-title">
+            <div class="price__tariff" id="price-tariff3">
+              <div class="price__tariff-title">
                 <b>Анлим</b>
                 9,99 USD
               </div>
-              <p class="application-price__tariff-description  application-price__tariff-description--included">Розовый фильтр</p>
-              <p class="application-price__tariff-description  application-price__tariff-description--included">Смайлики</p>
-              <p class="application-price__tariff-description  application-price__tariff-description--included">Комментарии</p>
+              <p class="price__tariff-descr  price__tariff-descr--incl">Розовый фильтр</p>
+              <p class="price__tariff-descr  price__tariff-descr--incl">Смайлики</p>
+              <p class="price__tariff-descr  price__tariff-descr--incl">Комментарии</p>
             </div>
           </div>
-          <div class="application-price__toggles  slider__toggles">
-           <label class="slider__toggle" for="application-feedback-input-1">1</label>
-           <label class="slider__toggle" for="application-feedback-input-2">2</label>
-           <label class="slider__toggle" for="application-feedback-input-3">3</label>
+          <div class="price__toggles  slider__toggles">
+           <label class="slider__toggle" for="feedback-input-1">1</label>
+           <label class="slider__toggle" for="feedback-input-2">2</label>
+           <label class="slider__toggle" for="feedback-input-3">3</label>
           </div>
         </div>
       </div>
@@ -154,7 +150,7 @@
         </div>
         <div class="contacts__options">
           <span class="contats__options-title">Приезжайте в гости:</span>
-        <p>ул. Большая Конюшенная, 19/8</p>
+          <p class="contats__options-descr">ул. Большая Конюшенная, 19/8</p>
         </div>
         <div class="contacts__map">
           <img src="img/contacts-map.jpg" alt="Как нас найти">
