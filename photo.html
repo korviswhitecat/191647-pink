@@ -6,23 +6,23 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-logo__logo">
+      <div class="main-header__logo">
         <img src="img/logo.svg" alt="Pink">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
       </div>
       <nav class="main-nav   main-nav--closed">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
-          <ul class="main-nav__nav-list">
-            <li class="main-nav__nav-item">
-              <a>Главная</a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a href="index.html">Главная</a>
             </li>
-            <li class="main-nav__nav-item">
-              <a href="#">Фотографии</a>
+            <li class="main-nav__item">
+              <a>Фотографии</a>
             </li>
-            <li class="main-nav__nav-item">
-              <a href="#">Конкурс</a>
+            <li class="main-nav__item">
+              <a href="form.html">Конкурс</a>
             </li>
-            <li class="main-nav__nav-item">
+            <li class="main-nav__item">
               <a href="#">HTML Academy</a>
             </li>
           </ul>
@@ -30,94 +30,94 @@
       </nav>
     </header>
     <main>
-      <div class="application-promo">
-        <div class=application-promo__title>Фотографии пользователей</div>
-        <p>Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
+      <div class="promo">
+        <div class="promo__title">Фотографии пользователей</div>
+        <p class="promo__descr">Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
       </div>
-      <div class="application-users-gallery">
+      <div class="gallery">
         <article class="user-photo">
           <img class="user-photo__daily-picture" src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__info">
-            <span class="user-photo__info  user-photo__info--author">Анна</span>
-            <time class="user-photo__info  user-photo__info--time" datetime="20164-05-29T10:10:10">(5 часов назад)</time>
+          <section class="user-photo__title">
+            <span class="user-photo__name">Анна</span>
+            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(5 часов назад)</time>
           </section>
           <section class="user-photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
           задавайте свои вопросы!</section>
           <section class="user-photo__likes">
-            <a class="user-photo__likes  user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes  user-photo__likes-count">215</span>
+            <a class="user-photo__likes-link">Нравится:</a>
+            <span class="user-photo__likes-count">215</span>
           </section>
         </article>
         <article class="user-photo">
-          <img class="user-photo__daily-picture" src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__info">
-            <span class="user-photo__info  user-photo__info--author">Левон</span>
-            <time class="user-photo__info  user-photo__info--time" datetime="20164-05-29T10:10:10">(10 часов назад)</time>
+          <img src="#" alt="Фото пользователя Pink">
+          <section class="user-photo__title">
+            <span class="user-photo__name">Левон</span>
+            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(10 часов назад)</time>
           </section>
           <section class="user-photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</section>
           <section class="user-photo__likes">
-            <a class="user-photo__likes  user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes  user-photo__likes-count">356</span>
+            <a class="user-photo__likes-link">Нравится:</a>
+            <span class="user-photo__likes-count">356</span>
           </section>
         </article>
         <article class="user-photo">
-          <img class="user-photo__daily-picture" src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__info">
-            <span class="user-photo__info  user-photo__info--author">Антон</span>
-            <time class="user-photo__info  user-photo__info--time" datetime="20164-05-29T10:10:10">(12 часов назад)</time>
+          <img src="#" alt="Фото пользователя Pink">
+          <section class="user-photo__title">
+            <span class="user-photo__name">Антон</span>
+            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(12 часов назад)</time>
           </section>
           <section class="user-photo__comment">Соседи будут рады!</section>
           <section class="user-photo__likes">
-            <a class="user-photo__likes  user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes  user-photo__likes-count">666</span>
+            <a class="user-photo__likes-link">Нравится:</a>
+            <span class="user-photo__likes-count">666</span>
           </section>
         </article>
         <article class="user-photo">
-          <img class="user-photo__daily-picture" src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__info">
-            <span class="user-photo__info  user-photo__info--author">Борис</span>
-            <time class="user-photo__info  user-photo__info--time" datetime="20164-05-29T10:10:10">(20 часов назад)</time>
+          <img src="#" alt="Фото пользователя Pink">
+          <section class="user-photo__title">
+            <span class="user-photo__name">Борис</span>
+            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(20 часов назад)</time>
           </section>
           <section class="user-photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</section>
           <section class="user-photo__likes">
-            <a class="user-photo__likes  user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes  user-photo__likes-count">215</span>
+            <a class="user-photo__likes-link">Нравится:</a>
+            <span class="user-photo__likes-count">215</span>
           </section>
         </article>
         <article class="user-photo">
-          <img class="user-photo__daily-picture" src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__info">
-            <span class="user-photo__info  user-photo__info--author">Сергей</span>
-            <time class="user-photo__info  user-photo__info--time" datetime="20164-05-29T10:10:10">(25 часов назад)</time>
+          <img src="#" alt="Фото пользователя Pink">
+          <section class="user-photo__title">
+            <span class="user-photo__name">Сергей</span>
+            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(25 часов назад)</time>
           </section>
           <section class="user-photo__comment">Самая кубанская в мире!</section>
           <section class="user-photo__likes">
-            <a class="user-photo__likes  user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes  user-photo__likes-count">4</span>
+            <a class="user-photo__likes-link">Нравится:</a>
+            <span class="user-photo__likes-count">4</span>
           </section>
         </article>
         <article class="user-photo">
-          <img class="user-photo__daily-picture" src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__info">
-            <span class="user-photo__info  user-photo__info--author">Максим</span>
-            <time class="user-photo__info  user-photo__info--time" datetime="20164-05-29T10:10:10">(40 часов назад)</time>
+          <img src="#" alt="Фото пользователя Pink">
+          <section class="user-photo__title">
+            <span class="user-photo__name">Максим</span>
+            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(40 часов назад)</time>
           </section>
           <section class="user-photo__comment">Где снег-то?</section>
           <section class="user-photo__likes">
-            <a class="user-photo__likes  user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes  user-photo__likes-count">150</span>
+            <a class="user-photo__likes-link">Нравится:</a>
+            <span class="user-photo__likes-count">150</span>
           </section>
         </article>
         <article class="user-photo">
-          <img class="user-photo__daily-picture" src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__info">
-            <span class="user-photo__info  user-photo__info--author">Надежда</span>
-            <time class="user-photo__info  user-photo__info--time" datetime="20164-05-29T10:10:10">(45 часов назад)</time>
+          <img src="#" alt="Фото пользователя Pink">
+          <section class="user-photo__title">
+            <span class="user-photo__name">Надежда</span>
+            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(45 часов назад)</time>
           </section>
           <section class="user-photo__comment">Всем GM и взаимные лайки!</section>
           <section class="user-photo__likes">
-            <a class="user-photo__likes  user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes  user-photo__likes-count">2560</span>
+            <a class="user-photo__likes-link">Нравится:</a>
+            <span class="user-photo__likes-count">2560</span>
           </section>
         </article>
       </div>
@@ -125,24 +125,23 @@
         <section class="upload__promo">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</section>
         <section class="upload__wrapper">
           <form class="upload__form" method="post" action="#.js">
-            <div class="upload__output-result"><img src="#" alt="Выберите изображение">
-            </div>
+            <img src="#" alt="Выберите изображение">
             <div class="upload__filters-options">
-              <label class="upload__filter-tool  upload__filter-tool--crop" for="crop">Обрезать</label>
-              <label class="upload__filter-tool  upload__filter-tool--fill upload__filter-tool--disabled" for="fill">Заливка</label>
-              <label class="upload__filter-tool  upload__filter-tool--contrast  upload__filter-tool--disabled" for="contrast">Яркость/Контраст</label>
+              <label class="upload__filter-tool  upload__filter-tool--crop  upload__filter-tool--active" for="crop">Обрезать</label>
+              <label class="upload__filter-tool  upload__filter-tool--fill" for="fill">Заливка</label>
+              <label class="upload__filter-tool  upload__filter-tool--contrast" for="contrast">Яркость/Контраст</label>
             </div>
             <div class="upload__filters-range">
-              <input class="upload__range-tool" type="range" name="crop" id="crop" min="1" max="100" step="1">
-              <input class="upload__range-tool  upload__range-tool--disabled" type="range" name="fill" id="fill" min="1" max="100" step="1">
-              <input class="upload__range-tool  upload__range-tool--disabled" type="range" name="contrast" id="contrast" min="1" max="100" step="1">
+              <input class="upload__range-tool  upload__range-tool--active" type="range" name="crop" id="crop" min="1" max="100" step="1">
+              <input class="upload__range-tool" type="range" name="fill" id="fill" min="1" max="100" step="1">
+              <input class="upload__range-tool" type="range" name="contrast" id="contrast" min="1" max="100" step="1">
+            </div>
+            <div class="upload__buttons">
+              <input class="upload-button" type="submit" name="post" value="Запостить">
+              <input class="upload-button  upload-button--disabled" type="reset" name="post" value="Запостить">
             </div>
           </form>
         </section>
-        <div class="upload__buttons">
-          <input class="upload-button" type="submit" name="post" value="Запостить">
-          <input class="upload-button  upload-button--disabled" type="reset" name="post" value="Запостить">
-        </div>
       </div>
     </main>
     <footer class="main-footer">
