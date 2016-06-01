@@ -5,11 +5,13 @@
 /*главная*/
 
 /*фото*/
+@import "blocks/promo.scss";
+@import "blocks/gallery.scss";
 
 /*форма*/
 @import "blocks/contest-form.scss";
 @import "blocks/contest.scss";
-
+@import "blocks/user-photo.scss";
 
 /*общее*/
 @import "global.scss";
