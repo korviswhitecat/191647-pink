@@ -1,0 +1,26 @@
+.contest {
+  text-align: center;
+  font-weight: normal;
+  font-family: $font-family;
+}
+
+.contest__title {
+  color: #ffffff;
+  font-size: 24px;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
+  background-color: #2b3848;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contest__descr {
+  color: $basic-font-color;
+  font-size: $basic-font-size;
+  background-color: $main-bg-color;
+  padding-top: 50px;
+  padding-bottom:50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

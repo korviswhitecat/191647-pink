@@ -1,14 +1,105 @@
 .contest-form {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-
   color: $basic-font-color;
   font-size: 14px;
   line-height: 30px;
   font-weight: normal;
-  font-family: "OpenSans", "Arial", sans-serif;
+  font-family: $font-family;
+  background-color: $main-bg-color;
+  margin-bottom: 45px;
+}
 
-  background-color: #ffffff;
+.contest-form__user-review,
+.contest-form__user-contacts,
+.contest-form__user-details {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contest-form__legend {
+  color: $decoration-font-color;
+  @include block;
+  font-size: $legend-font-size;
+  padding-left: 22px;
+  text-transform: uppercase;
+}
+
+.contest-form__review-title,
+.contest-form__os-title,
+.contest-form__legend,
+.contest-form__achievements-title {
+  color: $decoration-font-color;
+  font-size: $legend-font-size;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contest-form input[type="email"],
+.contest-form input[type="text"],
+.contest-form input[type="tel"] {
+  color: $basic-font-color;
+  border: $field-border;
+  border-radius: $field-border-radius;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.contest-form textarea[name="review"] {
+  resize: none;
+}
+
+legend {
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  @include block;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contest-form__os-checker,
+.contest-form__user-achievements {
+  background-color: $extra-bg-color;
+  padding-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contest-form__submit-form {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contest-form__button {
+  display: block;
+  width: 100%;
+  color: #ffffff;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.contest__warning {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.contest__warning b {
+  color: $decoration-font-color;
 }

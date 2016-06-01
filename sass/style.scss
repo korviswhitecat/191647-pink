@@ -1,5 +1,6 @@
 @import "normalize.css";
 @import "variables.scss";
+@import "mixins.scss";
 
 /*главная*/
 
@@ -7,6 +8,13 @@
 
 /*форма*/
 @import "blocks/contest-form.scss";
+@import "blocks/contest.scss";
 
 
 /*общее*/
+@import "global.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-footer.scss";
+@import "blocks/main-footer-logo.scss";
+@import "blocks/social-link.scss";
+@import "blocks/social-networks.scss";
