@@ -2,6 +2,7 @@
   text-align: left;
   font-weight: normal;
   font-family: $font-family;
+  margin-bottom: 20px;
 }
 
 .user-photo__daily-picture {
@@ -16,12 +17,24 @@
   padding-left: 18px;
 }
 
+.user-photo img {
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+
+/*
+.user-photo__daily-picture img {
+  margin-left: 0;
+}
+
 .user-photo__comment,
 .user-photo__time,
 .user-photo__name {
   @include block;
   vertical-align: top;
 }
+*/
 
 .user-photo__name {
   font-size: $basic-font-size;
