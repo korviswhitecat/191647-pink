@@ -7,32 +7,34 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="Pink">
-        <button class="main-nav__toggle" type="button"><img src="img/icon-menu-burger.svg" alt="Pink"></button>
-      </div>
-      <nav class="main-nav   main-nav--closed">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a>Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
+      <div class=main-header__tools>
+        <div class="main-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+          <button class="main-nav__toggle" type="button"><img src="img/icon-menu-burger.svg" alt="Pink"></button>
         </div>
-      </nav>
+        <nav class="main-nav   main-nav--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a>Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="main-header__promo">Конкурс на самое безбашенное путешествие с Пинк</div>
     </header>
     <main>
       <div class="contest">
-        <div class="contest__title">Конкурс на самое безбашенное путешествие с Пинк</div>
         <p class="contest__descr">Поделитесь своей историей и получите шанс выиграть ценный приз -
         1000 миль на вашу бонусную карту!</p>
       </div>
@@ -48,35 +50,56 @@
         <div class="contest-form__user-achievements">
           <fieldset>
             <legend class="contest-form__achievements-title">Ваши безбашенные достижения в путешествии</legend>
-            <label class="contest-form__achievements-item" for="selfie">Сделал селфи с акулой</label>
-            <input class="contest-form__achievements-checker" type="checkbox" name="selfie" id="selfie" checked>
-            <label class="contest-form__achievements-item" for="beach">Обгорел на пляже</label>
-            <input class="contest-form__achievements-checker" type="checkbox" name="beach" id="beach" checked>
-            <label class="contest-form__achievements-item" for="chacky">Видел Чака Норриса</label>
-            <input class="contest-form__achievements-checker" type="checkbox" name="chacky" id="chacky">
-            <label class="contest-form__achievements-item" for="souvenirs">Накупил сувениров</label>
-            <input class="contest-form__achievements-checker" type="checkbox" name="souvenirs" id="souvenirs">
-            <label class="contest-form__achievements-item" for="tower">Удержал башню</label>
-            <input class="contest-form__achievements-checker" type="checkbox" name="tower" id="tower" checked>
-            <label class="contest-form__achievements-item" for="hotel">Разгромил отель</label>
-            <input class="contest-form__achievements-checker" type="checkbox" name="hotel" id="hotel">
+            <ul>
+              <li>
+                <input class="contest-form__achievements-checker" type="checkbox" name="selfie" id="selfie" checked>
+                <label class="contest-form__achievements-item" for="selfie">Сделал селфи с акулой</label>
+              </li>
+              <li>
+                <input class="contest-form__achievements-checker" type="checkbox" name="beach" id="beach" checked>
+                <label class="contest-form__achievements-item" for="beach">Обгорел на пляже</label>
+              </li>
+              <li>
+                <input class="contest-form__achievements-checker" type="checkbox" name="chacky" id="chacky">
+                <label class="contest-form__achievements-item" for="chacky">Видел Чака Норриса</label>
+              </li>
+              <li>
+                <input class="contest-form__achievements-checker" type="checkbox" name="souvenirs" id="souvenirs">
+                <label class="contest-form__achievements-item" for="souvenirs">Накупил сувениров</label>
+              </li>
+              <li>
+                <input class="contest-form__achievements-checker" type="checkbox" name="tower" id="tower" checked>
+                <label class="contest-form__achievements-item" for="tower">Удержал башню</label>
+              </li>
+              <li><input class="contest-form__achievements-checker" type="checkbox" name="hotel" id="hotel">
+                  <label class="contest-form__achievements-item" for="hotel">Разгромил отель</label>
+              </li>
+            </ul>
           </fieldset>
         </div>
         <div class="contest-form__user-contacts">
           <label class="contest-form__legend" for="tel">Номерок телефончика</label>
           <input class="contest-form__field" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста" required>
           <label class="contest-form__legend" for="email">Адресок почты</label>
-          <input class="contest-form__field" type="email" name="email" id="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Email,пожалуйста" required>
+          <input class="contest-form__field" type="email" name="email" id="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Email, пожалуйста" required>
         </div>
         <div class="contest-form__os-checker">
           <fieldset>
             <legend class="contest-form__os-title">С каким приложением путешествовали?</legend>
-            <label class="contest-form__os-item" for="ios">Pink для iOS</label>
-            <input class="contest-form__os-radio" type="radio" name="os-options" id="ios" checked>
-            <label class="contest-form__os-item" for="android">Pink на Android</label>
-            <input class="contest-form__os-radio" type="radio" name="os-options" id="android">
-            <label class="contest-form__os-item" for="win">Windows Phone</label>
-            <input class="contest-form__os-radio" type="radio" name="os-options" id="win">
+            <ul>
+              <li>
+                <input class="contest-form__os-radio" type="radio" name="os-options" id="ios" checked>
+                <label class="contest-form__os-item" for="ios">Pink для iOS</label>
+              </li>
+              <li>
+                <input class="contest-form__os-radio" type="radio" name="os-options" id="android">
+                <label class="contest-form__os-item" for="android">Pink на Android</label>
+              </li>
+              <li>
+                <input class="contest-form__os-radio" type="radio" name="os-options" id="win">
+                <label class="contest-form__os-item" for="win">Windows Phone</label>
+              </li>
+            </ul>
           </fieldset>
         </div>
         <div class="contest-form__user-review">
@@ -103,8 +126,8 @@
         </span>
       </div>
       <div class="main-footer__copyright">
-        Разработано
-        <a class="main-footer__copyright-link" href="#"><img src="img/logo-htmlacademy.svg" alt="HTML Academy"></a>
+        <div class="main-footer__developer">Разработано</div>
+        <div class="main-footer__copyright-link-wrapper"><a class="main-footer__copyright-link" href="#"><img src="img/logo-htmlacademy.svg" alt="HTML Academy"></a></div>
       </div>
     </footer>
   </body>

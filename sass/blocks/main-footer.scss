@@ -6,3 +6,10 @@
   font-size: $basic-font-size;
   line-height: 18px;
 }
+
+
+.main-footer__copyright-link-wrapper,
+.main-footer__developer {
+  @include block;
+  vertical-align: middle;
+}

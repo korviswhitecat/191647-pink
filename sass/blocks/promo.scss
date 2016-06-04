@@ -4,23 +4,14 @@
   font-family: $font-family;
 }
 
-.promo__title {
-  color: #ffffff;
-  font-size: 24px;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center;
-  background-color: #2b3848;
-  padding-top: 50px;
-  padding-bottom:85px;
-  padding-left: $default-padding;
-  padding-right: $default-padding;
-}
 
 .promo__descr {
   color: $basic-font-color;
   font-size: $basic-font-size;
+  line-height: 30px;
   background-color: $main-bg-color;
-  padding-top: 50px;
-  padding-bottom:50px;
+  padding-top: 30px;
+  padding-bottom: 20px;
   padding-left: $default-padding;
   padding-right: $default-padding;
 }

@@ -1,0 +1,11 @@
+.advertisement {
+  font-family: $font-family;
+  padding-top: $default-padding;
+  padding-bottom: $default-padding * 2;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+  background-color: $main-bg-color;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}

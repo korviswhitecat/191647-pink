@@ -1,0 +1,48 @@
+.contacts {
+  font-family: $font-family;
+  text-align: center;
+}
+
+.contacts__wrapper {
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+}
+
+.contacts__title {
+  font-size: 24px;
+  font-weight: 300;
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+}
+
+.contacts__options {
+  margin-bottom: 15px;
+}
+
+.contacts__options a,
+.contats__options-descr {
+  font-size: 24px;
+  font-weight: 300;
+  color: $decoration-font-color;
+}
+
+.contacts__options a {
+  @include block;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+.contats__options-title {
+  display: block;
+  vertical-align: baseline;
+  color: $title-font-color;
+  font-weight: 700;
+}
+
+.contacts__map {
+  height: 200px;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat center;
+  font-size: 0;
+}

@@ -1,0 +1,31 @@
+.feedback {
+  text-align: center;
+  font-family: $font-family;
+  color: $basic-font-color;
+  padding-top: $default-padding * 2;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+  background-color: $main-bg-color;
+}
+
+.feedback__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__item:nth-child(n+2) {
+  display: none;
+}
+
+.feedback__item-title {
+  color: $title-font-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.feedback__item-descr {
+  font-weight: 400;
+  font-size: $basic-font-size;
+}

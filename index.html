@@ -7,32 +7,34 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__logo">
-        <img src="img/logo.svg" alt="Pink">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-      </div>
-      <nav class="main-nav   main-nav--closed">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a>Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
+      <div class=main-header__tools>
+        <div class="main-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+          <button class="main-nav__toggle" type="button"><img src="img/icon-menu-burger.svg" alt="Pink"></button>
         </div>
-      </nav>
+        <nav class="main-nav   main-nav--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a>Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="main-header__promo main-header__promo--index">Pink</div>
     </header>
     <main>
       <div class="download-offer">
-        <img src="img/download-offer.jpg" alt="Скачать Pink">
         <div class="download-offer__wrapper">
           <a class="download-offer__link" href="#">Скачать приложение</a>
           <div class="download-offer__option  download-offer__option--ios">
@@ -67,13 +69,10 @@
             <p class="features__item-descr">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img src="img/features.jpg" alt="Всем привет!">
+        <div class="features__img">Всем привет!</div>
       </div>
       <div class="feedback">
         <div class="feedback__wrapper  slider">
-          <input class="slider__input" type="radio" name="feedback" id="feedback-input-1" checked>
-          <input class="slider__input" type="radio" name="feedback" id="feedback-input-2">
-          <input class="slider__input" type="radio" name="feedback" id="feedback-input-3">
           <ul class="feedback__list">
             <li class="feedback__item  slider__item">
               <span class="feedback__item-title">Николай Петров</span>
@@ -89,6 +88,9 @@
               <p class="feedback__item-descr">«Напишите отзыв»</p>
             </li>
           </ul>
+          <input class="slider__input" type="radio" name="feedback" id="feedback-input-1" checked>
+          <input class="slider__input" type="radio" name="feedback" id="feedback-input-2">
+          <input class="slider__input" type="radio" name="feedback" id="feedback-input-3">
           <div class="feedback__toggles  slider__toggles">
            <label class="slider__toggle" for="feedback-input-1">1</label>
            <label class="slider__toggle" for="feedback-input-2">2</label>
@@ -98,38 +100,38 @@
       </div>
       <div class="price">
         <div class="price__wrapper  slider">
-          <input class="slider__input" type="radio" name="price" id="price-input-1">
-          <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
-          <input class="slider__input" type="radio" name="price" id="price-input-3">
           <div class="price__options">
             <div class="price__tariff" id="price-tariff1">
               <div class="price__tariff-title">
                 <b>База</b>
                 1,99 USD
               </div>
-              <p class="price__tariff-descr  price__tariff-descr--incl">Розовый фильтр</p>
-              <p class="price__tariff-descr  price__tariff-descr--not-incl">Смайлики</p>
-              <p class="price__tariff-descr  price__tariff-descr--not-incl">Комментарии</p>
+              <div class="price__tariff-descr  price__tariff-descr--incl">Розовый фильтр</div>
+              <div class="price__tariff-descr  price__tariff-descr--not-incl">Смайлики</div>
+              <div class="price__tariff-descr  price__tariff-descr--not-incl">Комментарии</div>
             </div>
             <div class="price__tariff" id="price-tariff2">
               <div class="price__tariff-title  price__tariff-title--hit">
                 <b>Стандарт</b>
                 3,99 USD
               </div>
-              <p class="price__tariff-descr  price__tariff-descr--incl">Розовый фильтр</p>
-              <p class="price__tariff-descr  price__tariff-descr--incl">Смайлики</p>
-              <p class="price__tariff-descr  price__tariff-descr--not-incl">Комментарии</p>
+              <div class="price__tariff-descr  price__tariff-descr--incl">Розовый фильтр</div>
+              <div class="price__tariff-descr  price__tariff-descr--incl">Смайлики</div>
+              <div class="price__tariff-descr  price__tariff-descr--not-incl">Комментарии</div>
             </div>
             <div class="price__tariff" id="price-tariff3">
               <div class="price__tariff-title">
                 <b>Анлим</b>
                 9,99 USD
               </div>
-              <p class="price__tariff-descr  price__tariff-descr--incl">Розовый фильтр</p>
-              <p class="price__tariff-descr  price__tariff-descr--incl">Смайлики</p>
-              <p class="price__tariff-descr  price__tariff-descr--incl">Комментарии</p>
+              <div class="price__tariff-descr  price__tariff-descr--incl">Розовый фильтр</div>
+              <div class="price__tariff-descr  price__tariff-descr--incl">Смайлики</div>
+              <div class="price__tariff-descr  price__tariff-descr--incl">Комментарии</div>
             </div>
           </div>
+          <input class="slider__input" type="radio" name="price" id="price-input-1">
+          <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
+          <input class="slider__input" type="radio" name="price" id="price-input-3">
           <div class="price__toggles  slider__toggles">
            <label class="slider__toggle" for="feedback-input-1">1</label>
            <label class="slider__toggle" for="feedback-input-2">2</label>
@@ -138,24 +140,24 @@
         </div>
       </div>
       <div class="contacts">
-        <div class="contacts__title">
-          Остались вопросы? Свяжитесь с нами!
+        <div class="contacts__wrapper">
+          <div class="contacts__title">
+            Остались вопросы? Свяжитесь с нами!
+          </div>
+          <div class="contacts__options">
+            <span class="contats__options-title">Звоните:</span>
+            <a href="tel:+78125556666">+7 (812) 555-66-66</a>
+          </div>
+          <div class="contacts__options">
+            <span class="contats__options-title">Пишите:</span>
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </div>
+            <div class="contacts__options">
+            <span class="contats__options-title">Приезжайте в гости:</span>
+            <div class="contats__options-descr">ул. Большая Конюшенная, 19/8</div>
+          </div>
         </div>
-        <div class="contacts__options">
-          <span class="contats__options-title">Звоните:</span>
-          <a href="tel:+78125556666">+7 (812) 555-66-66</a>
-        </div>
-        <div class="contacts__options">
-          <span class="contats__options-title">Пишите:</span>
-          <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </div>
-        <div class="contacts__options">
-          <span class="contats__options-title">Приезжайте в гости:</span>
-          <p class="contats__options-descr">ул. Большая Конюшенная, 19/8</p>
-        </div>
-        <div class="contacts__map">
-          <img src="img/contacts-map.jpg" alt="Как нас найти">
-        </div>
+        <div class="contacts__map">Как нас найти</div>
       </div>
     </main>
   </body>
