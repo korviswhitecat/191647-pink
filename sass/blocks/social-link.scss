@@ -1,0 +1,17 @@
+.social-link {
+  @include block;
+  color: #ffffff;
+  background: $main-bg-color;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  font-size: 0;
+  line-height: 0;
+  width: 45px;
+  height: 45px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 3px;
+  margin-right: 3px;
+}

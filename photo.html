@@ -3,129 +3,146 @@
   <head>
     <meta charset="utf-8">
     <title>PINK</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
-      <div class="main-header__logo">
-        <img src="img/logo.svg" alt="Pink">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-      </div>
-      <nav class="main-nav   main-nav--closed">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item">
-              <a href="index.html">Главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a>Фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
+      <div class=main-header__tools>
+        <div class="main-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+          <button class="main-nav__toggle" type="button"><img src="img/icon-menu-burger.svg" alt="Pink"></button>
         </div>
-      </nav>
+        <nav class="main-nav   main-nav--closed">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__item">
+                <a>Фотографии</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+              <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="main-header__promo main-header__promo--photo">Фотографии пользователей</div>
     </header>
     <main>
       <div class="promo">
-        <div class="promo__title">Фотографии пользователей</div>
         <p class="promo__descr">Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
       </div>
       <div class="gallery">
-        <article class="user-photo">
-          <img class="user-photo__daily-picture" src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__title">
-            <span class="user-photo__name">Анна</span>
-            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(5 часов назад)</time>
-          </section>
-          <section class="user-photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
-          задавайте свои вопросы!</section>
-          <section class="user-photo__likes">
-            <a class="user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes-count">215</span>
-          </section>
-        </article>
-        <article class="user-photo">
-          <img src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__title">
-            <span class="user-photo__name">Левон</span>
-            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(10 часов назад)</time>
-          </section>
-          <section class="user-photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</section>
-          <section class="user-photo__likes">
-            <a class="user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes-count">356</span>
+        <article class="user-photo-daily">
+          <img class="user-photo__daily-picture" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <section class="user-photo__info-wrapper">
+            <div class="user-photo__title">
+              <span class="user-photo__name">Анна</span>
+              <time class="user-photo__time" datetime="2016-05-29T10:10:10">(5 часов назад)</time>
+            </div>
+            <div class="user-photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
+              задавайте свои вопросы!</div>
+            <div class="user-photo__likes">
+              <a class="user-photo__likes-link">Нравится:</a>
+              <span class="user-photo__likes-count">215</span>
+            </div>
           </section>
         </article>
         <article class="user-photo">
-          <img src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__title">
-            <span class="user-photo__name">Антон</span>
-            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(12 часов назад)</time>
-          </section>
-          <section class="user-photo__comment">Соседи будут рады!</section>
-          <section class="user-photo__likes">
-            <a class="user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes-count">666</span>
-          </section>
-        </article>
-        <article class="user-photo">
-          <img src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__title">
-            <span class="user-photo__name">Борис</span>
-            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(20 часов назад)</time>
-          </section>
-          <section class="user-photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</section>
-          <section class="user-photo__likes">
-            <a class="user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes-count">215</span>
+          <img src="img/photo-1-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <section class="user-photo__info-wrapper">
+            <div class="user-photo__title">
+              <span class="user-photo__name">Левон</span>
+              <time class="user-photo__time" datetime="2016-05-29T10:10:10">(10 часов назад)</time>
+            </div>
+            <div class="user-photo__comment">Вчера он на луну летал, сегодня в руки к нам попал.</div>
+            <div class="user-photo__likes">
+              <a class="user-photo__likes-link">Нравится:</a>
+              <span class="user-photo__likes-count">356</span>
+            </div>
           </section>
         </article>
         <article class="user-photo">
-          <img src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__title">
-            <span class="user-photo__name">Сергей</span>
-            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(25 часов назад)</time>
-          </section>
-          <section class="user-photo__comment">Самая кубанская в мире!</section>
-          <section class="user-photo__likes">
-            <a class="user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes-count">4</span>
-          </section>
-        </article>
-        <article class="user-photo">
-          <img src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__title">
-            <span class="user-photo__name">Максим</span>
-            <time class="user-photo__time" datetime="2016-05-29T10:10:10">(40 часов назад)</time>
-          </section>
-          <section class="user-photo__comment">Где снег-то?</section>
-          <section class="user-photo__likes">
-            <a class="user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes-count">150</span>
+          <img src="img/photo-2-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <section class="user-photo__info-wrapper">
+            <div class="user-photo__title">
+              <span class="user-photo__name">Антон</span>
+              <time class="user-photo__time" datetime="2016-05-29T10:10:10">(12 часов назад)</time>
+            </div>
+            <div class="user-photo__comment">Соседи будут рады!</div>
+            <div class="user-photo__likes">
+              <a class="user-photo__likes-link">Нравится:</a>
+              <span class="user-photo__likes-count">666</span>
+            </div>
           </section>
         </article>
         <article class="user-photo">
-          <img src="#" alt="Фото пользователя Pink">
-          <section class="user-photo__title">
+          <img src="img/photo-3-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <section class="user-photo__info-wrapper">
+            <div class="user-photo__title">
+              <span class="user-photo__name">Борис</span>
+              <time class="user-photo__time" datetime="2016-05-29T10:10:10">(20 часов назад)</time>
+            </div>
+            <div class="user-photo__comment">Здесь могла быть ваша цитата о высоком и вечном.</div>
+            <div class="user-photo__likes">
+              <a class="user-photo__likes-link">Нравится:</a>
+              <span class="user-photo__likes-count">215</span>
+            </div>
+          </section>
+        </article>
+        <article class="user-photo">
+          <img src="img/photo-4-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <section class="user-photo__info-wrapper">
+            <div class="user-photo__title">
+              <span class="user-photo__name">Сергей</span>
+              <time class="user-photo__time" datetime="2016-05-29T10:10:10">(25 часов назад)</time>
+            </div>
+            <div class="user-photo__comment">Самая кубанская в мире!</div>
+            <div class="user-photo__likes">
+              <a class="user-photo__likes-link">Нравится:</a>
+              <span class="user-photo__likes-count">4</span>
+            </div>
+          </section>
+        </article>
+        <article class="user-photo">
+          <img src="img/photo-5-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <section class="user-photo__info-wrapper">
+            <div class="user-photo__title">
+              <span class="user-photo__name">Максим</span>
+              <time class="user-photo__time" datetime="2016-05-29T10:10:10">(40 часов назад)</time>
+            </div>
+            <div class="user-photo__comment">Где снег-то?</div>
+            <div class="user-photo__likes">
+              <a class="user-photo__likes-link">Нравится:</a>
+              <span class="user-photo__likes-count">150</span>
+            </div>
+          </section>
+        </article>
+        <article class="user-photo">
+          <img src="img/photo-6-mobile@1x.jpg" alt="Фото пользователя Pink">
+          <section class="user-photo__info-wrapper">
+            <div class="user-photo__title">
             <span class="user-photo__name">Надежда</span>
             <time class="user-photo__time" datetime="2016-05-29T10:10:10">(45 часов назад)</time>
-          </section>
-          <section class="user-photo__comment">Всем GM и взаимные лайки!</section>
-          <section class="user-photo__likes">
-            <a class="user-photo__likes-link">Нравится:</a>
-            <span class="user-photo__likes-count">2560</span>
+            </div>
+            <div class="user-photo__comment">Всем GM и взаимные лайки!</div>
+            <div class="user-photo__likes">
+              <a class="user-photo__likes-link">Нравится:</a>
+              <span class="user-photo__likes-count">2560</span>
+            </div>
           </section>
         </article>
       </div>
       <div class="upload">
-        <section class="upload__promo">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</section>
+        <section class="upload__promo">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</section>
         <section class="upload__wrapper">
           <form class="upload__form" method="post" action="#.js">
-            <img src="#" alt="Выберите изображение">
+            <img src="img/photo-7-mobile@1x.jpg" alt="Выберите изображение">
             <div class="upload__filters-options">
               <label class="upload__filter-tool  upload__filter-tool--crop  upload__filter-tool--active" for="crop">Обрезать</label>
               <label class="upload__filter-tool  upload__filter-tool--fill" for="fill">Заливка</label>
@@ -146,18 +163,18 @@
     </main>
     <footer class="main-footer">
       <div class="main-footer-logo">
-        <img src="#" alt="Выбирай Pink!">
+        <img src="img/logo-pink-blue-mobile.svg" alt="Выбирай Pink!">
       </div>
       <div class="main-footer__social">
         <span class="social-networks">
-          <a class="social-link  social-link--twitter" href="#"></a>
-          <a class="social-link  social-link--facebook" href="#"></a>
-          <a class="social-link  social-link--youtube" href="#"></a>
+          <a class="social-link  social-link--twitter" href="#">Мы в Твиттере</a>
+          <a class="social-link  social-link--facebook" href="#">Мы в Фейсбуке</a>
+          <a class="social-link  social-link--youtube" href="#">Мы на Youtube</a>
         </span>
       </div>
       <div class="main-footer__copyright">
-        Разработано
-        <a class="main-footer__copyright-link" href="#"><img src="#" alt="HTML Academy"></a>
+        <div class="main-footer__developer">Разработано</div>
+        <div class="main-footer__copyright-link-wrapper"><a class="main-footer__copyright-link" href="#"><img src="img/logo-htmlacademy.svg" alt="HTML Academy"></a></div>
       </div>
     </footer>
   </body>

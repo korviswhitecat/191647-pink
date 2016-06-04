@@ -1,0 +1,124 @@
+.contest-form {
+  color: $basic-font-color;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: $font-family;
+  background-color: $main-bg-color;
+  margin-bottom: 45px;
+}
+
+.contest-form__os-checker,
+.contest-form__user-achievements,
+.contest-form__user-review,
+.contest-form__user-contacts,
+.contest-form__user-details {
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+}
+
+.contest-form__legend {
+  color: $decoration-font-color;
+  @include block;
+  font-size: $legend-font-size;
+  padding-left: 22px;
+  text-transform: uppercase;
+}
+
+.contest-form__user-review {
+  text-align: center;
+}
+
+.contest-form__review-title,
+.contest-form__os-title,
+.contest-form__legend,
+.contest-form__achievements-title {
+  color: $decoration-font-color;
+  font-size: $legend-font-size;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contest-form input[type="email"],
+.contest-form input[type="text"],
+.contest-form input[type="tel"] {
+  color: $basic-font-color;
+  border: $field-border;
+  border-radius: $field-border-radius;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contest-form textarea[name="review"] {
+  width: 100%;
+  resize: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  min-height: 196px;
+}
+
+fieldset,
+legend {
+  @include block;
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contest-form__os-checker,
+.contest-form__user-achievements {
+  background-color: $extra-bg-color;
+}
+
+.contest-form__user-achievements ul,
+.contest-form__os-checker ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.contest-form__user-achievements li,
+.contest-form__os-checker li {
+  font-size: $basic-font-size;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+
+.contest-form__submit-form {
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+}
+
+.contest-form__button {
+  display: block;
+  width: 100%;
+  color: $basic-font-color;
+  background-color: #2aab6d;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: $font-family;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+
+.contest__warning {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.contest__warning b {
+  color: $decoration-font-color;
+}

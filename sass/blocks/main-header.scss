@@ -1,0 +1,51 @@
+.main-header {
+  font-family: $font-family;
+  background-color: #2b3848;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
+  padding: 0;
+}
+
+.main-header__tools {
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
+  padding-right: 30px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.main-header__logo {
+  @include block;
+  width: 100%;
+}
+
+.main-nav__toggle {
+  float: right;
+  @include block;
+  width: 50px;
+  height: 27px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../img/icon-menu-burger.svg") no-repeat center;
+}
+
+.main-header__promo {
+  color: #ffffff;
+  font-size: 24px;
+  padding-top: 25px;
+  padding-bottom: 50px;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+  text-align: center;
+  font-weight: 300;
+}
+
+.main-header__promo--photo {
+  padding-bottom: 70px;
+}
+
+.main-header__promo--index {
+  font-size: 0;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat bottom;
+  min-height: 310px;
+}

@@ -1,0 +1,17 @@
+.contest {
+  text-align: center;
+  font-weight: 400;
+  font-family: $font-family;
+}
+
+
+.contest__descr {
+  color: $basic-font-color;
+  font-size: $basic-font-size;
+  line-height: 30px;
+  background-color: $main-bg-color;
+  padding-top: 30px;
+  padding-bottom: 0;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+}

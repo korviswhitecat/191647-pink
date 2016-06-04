@@ -1,0 +1,58 @@
+.user-photo-daily,
+.user-photo {
+  text-align: left;
+  font-weight: normal;
+  font-family: $font-family;
+  margin-bottom: 20px;
+  font-size: 0;
+}
+
+.user-photo__daily-picture {
+  margin-left: -20px;
+}
+
+.user-photo__info-wrapper {
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+}
+
+
+.user-photo__info-wrapper {
+  background-color: #f2f2f2;
+}
+
+.user-photo img {
+  width: 100%
+}
+
+.user-photo__name {
+  font-size: $basic-font-size;
+  font-weight: 700;
+}
+
+.user-photo__time {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  @include block;
+  vertical-align: bottom;
+  padding-left: 3px;
+}
+
+.user-photo__comment {
+  font-size: $basic-font-size;
+  line-height: 24px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.user-photo__likes {
+  color: #d22856;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px
+}

@@ -1,0 +1,35 @@
+.price {
+  font-family: $font-family;
+  color: $basic-font-color;
+  background-color: $extra-bg-color;
+  text-transform: uppercase;
+  font-size: $basic-font-color;
+  line-height: 30px;
+}
+
+.price__tariff-title {
+  text-align: center;
+  color: #ffffff;
+  background-color: #2b3848;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.price__tariff-title b {
+  font-weight: 700;
+  display: block;
+  vertical-align: top;
+}
+
+.price__tariff-descr {
+  background-color: $main-bg-color;
+  border: 1px solid #e5e5e5;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: $default-padding;
+}
+
+.price__toggles {
+  text-align: center;
+}

@@ -1,0 +1,78 @@
+.upload {
+  text-align: center;
+  font-weight: 400;
+  font-family: $font-family;
+  line-height: 30px;
+  color: #283645;
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+}
+
+.upload__promo {
+  background-color: $main-bg-color;
+  padding-bottom: 40px;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+
+}
+
+.upload__wrapper {
+  background-color: $extra-bg-color;
+  padding-top: $default-padding;
+}
+
+.upload__range-tool {
+  cursor: pointer;
+}
+
+.upload__range-tool:nth-child(n+2) {
+  display: none;
+}
+
+.upload__filter-tool {
+  @include block;
+  vertical-align: baseline;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  cursor: pointer;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.upload__filter-tool--crop {
+  background: url("../img/icon-editor-crop.svg") no-repeat center;
+}
+
+.upload__filter-tool--fill {
+  background: url("../img/icon-editor-fill.svg") no-repeat center;
+}
+
+.upload__filter-tool--contrast {
+  background: url("../img/icon-editor-contrast.svg") no-repeat center;
+}
+
+.upload__buttons {
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+}
+
+.upload-button {
+  @include block;
+  vertical-align: baseline;
+  width: 100%;
+  color: #d22856;
+  font-weight: 700;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 3px solid $decoration-font-color;
+  border-radius: 20px;
+  background-color: $extra-bg-color;
+  cursor: pointer;
+  margin-bottom: 10px;
+
+}
