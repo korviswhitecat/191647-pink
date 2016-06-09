@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header container">
       <div class=main-header__tools>
         <div class="main-header__logo">
           <img src="img/logo-pink-white-mobile.svg" alt="Pink">
           <button class="main-nav__toggle" type="button"><img src="img/icon-menu-burger.svg" alt="Pink"></button>
         </div>
-        <nav class="main-nav   main-nav--closed">
+        <nav class="main-nav main-nav--closed">
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
@@ -37,22 +37,22 @@
       <div class="promo">
         <p class="promo__descr">Взгляните на фотографии, которые выкладывают наши пользователи! Видите, как не хватает ваших?</p>
       </div>
-      <div class="gallery">
-        <article class="user-photo-daily">
-          <img class="user-photo__daily-picture" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя Pink">
-          <section class="user-photo__info-wrapper">
-            <div class="user-photo__title">
-              <span class="user-photo__name">Анна</span>
-              <time class="user-photo__time" datetime="2016-05-29T10:10:10">(5 часов назад)</time>
-            </div>
-            <div class="user-photo__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
-              задавайте свои вопросы!</div>
-            <div class="user-photo__likes">
-              <a class="user-photo__likes-link">Нравится:</a>
-              <span class="user-photo__likes-count">215</span>
-            </div>
-          </section>
-        </article>
+      <article class="user-photo-daily">
+        <img class="user-photo-daily__preview" src="img/panorama-mobile@1x.jpg" alt="Фото пользователя Pink">
+        <section class="user-photo-daily__info-wrapper container">
+          <div class="user-photo-daily__title">
+            <span class="user-photo-daily__name">Анна</span>
+            <time class="user-photo-daily__time" datetime="2016-05-29T10:10:10">(5 часов назад)</time>
+          </div>
+          <div class="user-photo-daily__comment">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе,
+            задавайте свои вопросы!</div>
+          <div class="user-photo-daily__likes">
+            <a class="user-photo-daily__likes-link">Нравится:</a>
+            <span class="user-photo-daily__likes-count">215</span>
+          </div>
+        </section>
+      </article>
+      <div class="gallery container">
         <article class="user-photo">
           <img src="img/photo-1-mobile@1x.jpg" alt="Фото пользователя Pink">
           <section class="user-photo__info-wrapper">
@@ -138,7 +138,7 @@
           </section>
         </article>
       </div>
-      <div class="upload">
+      <div class="upload container">
         <section class="upload__promo">Затмите их всех! <br>Выкладывайте все, что накопилось в телефоне!</section>
         <section class="upload__wrapper">
           <form class="upload__form" method="post" action="#.js">
@@ -155,13 +155,13 @@
             </div>
             <div class="upload__buttons">
               <input class="upload-button" type="submit" name="post" value="Запостить">
-              <input class="upload-button  upload-button--disabled" type="reset" name="post" value="Запостить">
+              <input class="upload-button upload-button--reset" type="reset" name="post" value="Отмена">
             </div>
           </form>
         </section>
       </div>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <div class="main-footer-logo">
         <img src="img/logo-pink-blue-mobile.svg" alt="Выбирай Pink!">
       </div>

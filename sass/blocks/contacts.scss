@@ -34,6 +34,17 @@
   text-decoration: none;
 }
 
+.contacts__options a:hover {
+  color: $basic-font-color;
+  text-decoration: underline;
+}
+
+.contacts__options a:active {
+  color: lighten($basic-font-color, 50%);
+  text-decoration: none;
+}
+
+
 .contats__options-title {
   display: block;
   vertical-align: baseline;

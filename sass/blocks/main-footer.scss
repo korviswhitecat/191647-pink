@@ -13,3 +13,44 @@
   @include block;
   vertical-align: middle;
 }
+
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .main-footer {
+    @include clearfix;
+    position: relative;
+    padding-bottom: 20px;
+  }
+
+  .main-footer-logo {
+    position: absolute;
+    top: 0;
+    left: 40px;
+  }
+
+  .main-footer__copyright {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .main-footer {
+    @include clearfix;
+    position: relative;
+    padding-bottom: 50px;
+  }
+
+  .main-footer-logo {
+    position: absolute;
+    top: 0;
+    left: 130px;
+  }
+
+  .main-footer__copyright {
+    position: absolute;
+    top: 20px;
+    right: 130px;
+  }
+}

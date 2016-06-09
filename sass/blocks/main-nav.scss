@@ -6,7 +6,6 @@
   background-color: #283645;
   text-transform: uppercase;
   text-align: center;
-  @include container;
 }
 
 .main-nav__list {
@@ -34,15 +33,25 @@
   background: url("../img/icon-menu-burger.svg") no-repeat center;
 }
 
-@media ($desktop-widths) {
+@media (min-width: $desktop-widths) {
   .main-nav {
     width: auto;
+    float: right;
   }
   .main-nav__wrapper {
-    @include container;
-    @include clearfix;
+    width: auto;
   }
   .main-nav__toggle {
     display: none;
+  }
+  .main-nav__item {
+    @include block;
+    padding-left: 40px;
+    padding-bottom: 20px;
+  }
+
+  .main-nav__item a {
+    text-transform: none;
+    font-weight: 300;
   }
 }

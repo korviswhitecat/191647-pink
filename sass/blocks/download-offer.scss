@@ -25,6 +25,15 @@
   border-radius: 30px;
 }
 
+.download-offer__link:hover {
+  color: $decoration-font-color;
+  background-color: #ffffff;
+}
+
+.download-offer__link:active {
+  color: lighten($decoration-font-color, 30%);
+}
+
 .download-offer__wrapper p {
   color: #ffffff;
   font-weight: 300;

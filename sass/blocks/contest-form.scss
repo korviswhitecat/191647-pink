@@ -1,6 +1,6 @@
 .contest-form {
   color: $basic-font-color;
-  font-size: 14px;
+  font-size: $basic-font-size;
   font-weight: 400;
   font-family: $font-family;
   background-color: $main-bg-color;
@@ -44,6 +44,10 @@
 .contest-form input[type="text"],
 .contest-form input[type="tel"] {
   color: $basic-font-color;
+  font-size: $form-options-font-size;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: $font-family;
   border: $field-border;
   border-radius: $field-border-radius;
   padding-top: 17px;
@@ -54,6 +58,37 @@
   margin-bottom: 20px;
   width: 100%;
   box-sizing: border-box;
+  outline: none;
+}
+
+.contest-form input[type="email"]:hover,
+.contest-form input[type="text"]:hover,
+.contest-form input[type="tel"]:hover,
+.contest-form textarea[name="review"]:hover {
+  border: $field-hover-border;
+}
+
+.contest-form input[type="email"]:focus,
+.contest-form input[type="text"]:focus,
+.contest-form input[type="tel"]:focus,
+.contest-form textarea[name="review"]:focus {
+  border: $field-active-border;
+}
+
+.contest-form input::-webkit-input-placeholder {
+  color: $basic-font-color;
+  font-size: $form-options-font-size;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: $font-family;
+}
+
+.contest-form input:-moz-placeholder {
+  color: $basic-font-color;
+  font-size: $form-options-font-size;
+  line-height: 30px;
+  font-weight: 400;
+  font-family: $font-family;
 }
 
 .contest-form textarea[name="review"] {
@@ -61,7 +96,38 @@
   resize: none;
   margin-top: 10px;
   margin-bottom: 10px;
-  min-height: 196px;
+  min-height: 156px;
+  border: $field-border;
+  border-radius: $field-border-radius;
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+  color: $basic-font-color;
+  font-size: $form-options-font-size;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: $font-family;
+  text-align: center;
+  outline: none;
+}
+
+.contest-form textarea::-webkit-input-placeholder {
+  color: $basic-font-color;
+  font-size: $form-options-font-size;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: $font-family;
+  text-align: center;
+}
+
+.contest-form textarea:-moz-placeholder {
+  color: $basic-font-color;
+  font-size: $form-options-font-size;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: $font-family;
+  text-align: center;
 }
 
 fieldset,
@@ -71,6 +137,79 @@ legend {
   border: none;
   margin: 0;
   padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contest-form__user-achievements label,
+.contest-form__os-checker label {
+  @include block;
+  vertical-align: baseline;
+	position: relative;
+	cursor: pointer;
+  padding-left: 70px;
+  font-size: $form-options-font-size;
+}
+
+.contest-form__os-checker label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+  top: -8px;
+	width: 35px;
+	height: 35px;
+  background: $main-bg-color;
+	border: $field-border;
+  border-radius: 50%;
+}
+
+.contest-form__user-achievements label::before {
+	content: "";
+	position: absolute;
+	left: 0;
+  top: -8px;
+	width: 35px;
+	height: 35px;
+  background: $main-bg-color;
+	border: $field-border;
+  border-radius: $field-border-radius;
+}
+
+.contest-form__user-achievements label:hover::before,
+.contest-form__os-checker label:hover::before {
+  border: $field-hover-border;
+}
+
+.contest-form__user-achievements label:active::before,
+.contest-form__os-checker label:active::before {
+  border: $field-active-border;
+}
+
+.contest-form__os-checker input[type="radio"]:checked + label::after {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 12px;
+	width: 15px;
+	height: 15px;
+	background-color: $decoration-font-color;
+  border-radius: 50%;
+}
+
+.contest-form__user-achievements input[type="checkbox"]:checked + label::after {
+	content: "";
+	position: absolute;
+	top: 4px;
+	left: 12px;
+	width: 15px;
+	height: 15px;
+	background-color: $decoration-font-color;
+  background: url("../img/icon-yes.svg") no-repeat center;
+}
+
+.contest-form__user-achievements input,
+.contest-form__os-checker input {
+  display: none;
 }
 
 .contest-form__os-checker,
@@ -102,7 +241,7 @@ legend {
 .contest-form__button {
   display: block;
   width: 100%;
-  color: $basic-font-color;
+  color: #ffffff;
   background-color: #2aab6d;
   text-transform: uppercase;
   font-weight: 700;
@@ -111,6 +250,28 @@ legend {
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
+}
+
+.contest-form__button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contest-form__button--progress {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contest-form__button--progress:hover {
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.contest-form__button--disabled {
+  background-color: #e5e5e5;
+  cursor: none;
+  pointer-events: none;
 }
 
 .contest__warning {
