@@ -5,6 +5,7 @@
   text-transform: uppercase;
   font-size: $basic-font-color;
   line-height: 30px;
+  text-align: center;
 }
 
 .price__tariff-title {
@@ -32,4 +33,28 @@
 
 .price__toggles {
   text-align: center;
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .price {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+
+  .price__tariff {
+  @include block;
+  width: 230px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .price {
+    padding-top: 60px;
+    padding-bottom: 90px;
+  }
+
+  .price__tariff {
+  @include block;
+  width: 230px;
+  }
 }

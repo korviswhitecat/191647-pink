@@ -25,6 +25,15 @@
   border-radius: 30px;
 }
 
+.download-offer__link:hover {
+  color: $decoration-font-color;
+  background-color: #ffffff;
+}
+
+.download-offer__link:active {
+  color: lighten($decoration-font-color, 30%);
+}
+
 .download-offer__wrapper p {
   color: #ffffff;
   font-weight: 300;
@@ -52,4 +61,22 @@
 
 .download-offer__option--windows {
   background: url("../img/logo-microsoft.svg") no-repeat center;
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .download-offer {
+    width: 300px;
+    position: absolute;
+    top: 450px;
+    left: 220px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .download-offer {
+    width: 300px;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+  }
 }

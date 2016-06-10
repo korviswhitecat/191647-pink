@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header main-header--index container">
       <div class=main-header__tools>
         <div class="main-header__logo">
           <img src="img/logo-pink-white-mobile.svg" alt="Pink">
@@ -16,10 +16,10 @@
           <div class="main-nav__wrapper">
             <ul class="main-nav__list">
               <li class="main-nav__item">
-                <a href="index.html">Главная</a>
+                <a>Главная</a>
               </li>
               <li class="main-nav__item">
-                <a>Фотографии</a>
+                <a href="photo.html">Фотографии</a>
               </li>
               <li class="main-nav__item">
                 <a href="form.html">Конкурс</a>
@@ -31,7 +31,7 @@
           </div>
         </nav>
       </div>
-      <div class="main-header__promo main-header__promo--index">Pink</div>
+      <div class="main-header__promo main-header__promo--index">Взгляните на жизнь иначе!</div>
     </header>
     <main>
       <div class="download-offer">
@@ -54,7 +54,7 @@
         <p class="advertisement--descr">Устали от серости мегаполиса?</p>
         <p class="advertisement--descr">Нам есть, что вам предложить!</p>
       </div>
-      <div class="features">
+      <div class="features container">
         <ul class="features__list">
           <li class="features__item">
             <span class="features__item-title">Поднимает настроение</span>
@@ -71,20 +71,29 @@
         </ul>
         <div class="features__img">Всем привет!</div>
       </div>
-      <div class="feedback">
+      <div class="pseudo-science container">
+        <div class="pseudo-science__title">Эффект на 24 часа!</div>
+        <div class="pseudo-science__content">Британские ученые провели исследования и доказали, что положительный эффект от использования
+          приложения длится целые сутки!</div>
+        <a class="pseudo-science__link" href="#">Узнать больше об исследовании</a>
+      </div>
+      <div class="feedback container">
         <div class="feedback__wrapper  slider">
           <ul class="feedback__list">
             <li class="feedback__item  slider__item">
               <span class="feedback__item-title">Николай Петров</span>
+              <span class="feedback__item-additional">25 лет, водитель трамвая</span>
               <p class="feedback__item-descr">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
             <li class="feedback__item  slider__item">
               <span class="feedback__item-title">Здесь может быть ваше имя</span>
+              <span class="feedback__item-additional">профессия</span>
               <p class="feedback__item-descr">«Напишите отзыв»</p>
             </li>
             <li class="feedback__item  slider__item">
               <span class="feedback__item-title">Здесь может быть ваше имя</span>
+              <span class="feedback__item-additional">профессия</span>
               <p class="feedback__item-descr">«Напишите отзыв»</p>
             </li>
           </ul>
@@ -98,7 +107,7 @@
           </div>
         </div>
       </div>
-      <div class="price">
+      <div class="price container">
         <div class="price__wrapper  slider">
           <div class="price__options">
             <div class="price__tariff" id="price-tariff1">
