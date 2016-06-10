@@ -62,3 +62,21 @@
 .download-offer__option--windows {
   background: url("../img/logo-microsoft.svg") no-repeat center;
 }
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .download-offer {
+    width: 300px;
+    position: absolute;
+    top: 450px;
+    left: 220px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .download-offer {
+    width: 300px;
+    position: absolute;
+    top: 400px;
+    left: 100px;
+  }
+}

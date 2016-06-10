@@ -29,7 +29,7 @@
 .contest-form__user-review {
   text-align: center;
 }
-
+.contest-form__user-contacts-legend,
 .contest-form__review-title,
 .contest-form__os-title,
 .contest-form__legend,
@@ -38,6 +38,10 @@
   font-size: $legend-font-size;
   text-align: center;
   text-transform: uppercase;
+}
+
+.contest-form__user-contacts-legend {
+  display: none;
 }
 
 .contest-form input[type="email"],
@@ -282,4 +286,52 @@ legend {
 
 .contest__warning b {
   color: $decoration-font-color;
+}
+
+@media (min-width: $desktop-widths) {
+  .contest-form {
+    position: relative;
+  }
+  .contest-form__user-details {
+    width: 50%;
+    box-sizing: border-box;
+  }
+  .contest-form__os-checker {
+    width: 430px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 50px;
+    background-color: $main-bg-color;
+  }
+  .contest-form__os-checker fieldset {
+    border: $field-border;
+    padding-bottom: 65px;
+  }
+
+  .contest-form__os-checker legend {
+    margin-bottom: 20px;
+  }
+
+  .contest-form__os-checker label {
+    margin-left: 70px;
+  }
+
+  .contest-form__user-contacts-legend {
+    display: block;
+  }
+
+  .contest-form__user-contacts {
+    position: relative;
+  }
+
+  .contest-form__user-contacts input[type="email"],
+  .contest-form__user-contacts input[type="tel"] {
+    width: 375px;
+  }
+  .contest-form__user-contacts label {
+    position: abslolute;
+    bottom: 0;
+  }
+
 }

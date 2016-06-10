@@ -14,9 +14,11 @@
   padding: 0;
 }
 
+.feedback__item-additional,
 .feedback__item:nth-child(n+2) {
   display: none;
 }
+
 
 .feedback__item-title {
   color: $title-font-color;
@@ -28,4 +30,25 @@
 .feedback__item-descr {
   font-weight: 400;
   font-size: $basic-font-size;
+}
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .feedback__item-additional {
+    display: block;
+  }
+  .feedback__item {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+  .feedback__item-additional {
+    display: block;
+  }
+  .feedback__item {
+    padding-top: 180px;
+    padding-bottom: 120px;
+  }
 }

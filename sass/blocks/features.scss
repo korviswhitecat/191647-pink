@@ -35,3 +35,44 @@
   font-size: 0;
   background: url("../img/iphone-screen-mobile@1x.png") no-repeat top;
 }
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .features {
+    padding-left: 300px;
+    width: 320px;
+    position: relative;
+
+  }
+  .features__img {
+    position: absolute;
+    height: 280px;
+    top: 0;
+    font-size: 0;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat top;
+  }
+}
+
+
+@media (min-width: $desktop-widths) {
+  .features__item-descr {
+    width: 200px;
+  }
+  .features__item {
+    display: inline-block;
+  }
+
+  .features {
+    padding-top: 300px;
+    position: relative;
+  }
+
+  .features__img {
+    position: absolute;
+    top: 0;
+    height: 280px;
+    font-size: 0;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat top;
+  }
+
+
+}
