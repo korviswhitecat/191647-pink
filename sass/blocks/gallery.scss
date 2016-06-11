@@ -6,8 +6,20 @@
   text-align: center;
 }
 
-@media (min-width: $desktop-widths) {
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: stretch;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  }
 }

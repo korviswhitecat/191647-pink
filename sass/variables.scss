@@ -5,12 +5,11 @@ $basic-font-size: 14px;
 $form-options-font-size: 18px;
 $basic-desktop-font-size: 18px;
 $title-desktop-font-size: 50px;
-
+$basic-tablet-font-size: 18px;
+$title-tablet-font-size: 40px;
 $main-bg-color: #ffffff;
 $extra-bg-color: #f2f2f2;
 $font-family: "OpenSans", "Arial", sans-serif;
-
-
 $default-padding: 20px;
 
 /*поля ввода формы*/
@@ -27,8 +26,6 @@ $network-border: 3px solid #e9ebec;
 $network-hover-border: 3px solid #283645;
 $network-active-border: 3px solid #e9ebec;
 $network-border-radius: 50%;
-
-
 
 /*ширины вьюпорта*/
 $tablet-widths: 700px;

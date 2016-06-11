@@ -1,58 +1,88 @@
 .user-photo-daily {
+  margin-bottom: 20px;
   text-align: left;
   font-weight: normal;
   font-family: $font-family;
-  margin-bottom: 20px;
   font-size: 0;
+  &__info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 320px;
+    box-sizing: border-box;
+    padding-top: $default-padding;
+    padding-right: $default-padding;
+    padding-bottom: $default-padding;
+    padding-left: $default-padding;
+    background-color: #f2f2f2;
+  }
+  &__name {
+    font-size: $basic-font-size;
+    font-weight: 700;
+  }
+  &__time {
+    padding-left: 3px;
+    font-size: 12px;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  &__comment {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: $basic-font-size;
+    line-height: 24px;
+  }
+  &__likes {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $decoration-font-color;
+  }
 }
 
 .user-photo-daily img {
+  height: 138px;
   width: 100%
 }
 
-.user-photo-daily__info-wrapper {
-  padding-top: $default-padding;
-  padding-bottom: $default-padding;
-  padding-left: $default-padding;
-  padding-right: $default-padding;
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: #f2f2f2;
-}
-
-.user-photo-daily__name {
-  font-size: $basic-font-size;
-  font-weight: 700;
-}
-
-.user-photo-daily__time {
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: 300;
-  @include block;
-  vertical-align: bottom;
-  padding-left: 3px;
-}
-
-.user-photo-daily__comment {
-  font-size: $basic-font-size;
-  line-height: 24px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.user-photo-daily__likes {
-  color: #d22856;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-left: 30px
-}
-
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
-  .user-photo-daily__info-wrapper {
-    width: 620px;
+  .user-photo-daily {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    &__info-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 620px;
+      box-sizing: border-box;
+      padding-top: 30px;
+      padding-left: 25px;
+    }
+    &__title {
+      min-width: 300px;
+      order: -2;
+    }
+    &__likes {
+      order: -1;
+      margin-left: auto;
+      min-width: 150px;
+      padding-left: 0;
+    }
+    &__comment {
+      min-width: 500px;
+    }
+  }
+
+  .user-photo-daily img {
+    height: 507px;
+    width: 100%;
   }
 }
 

@@ -1,4 +1,5 @@
 .social-networks {
-  @include block;
-  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }

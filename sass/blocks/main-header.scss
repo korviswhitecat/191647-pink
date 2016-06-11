@@ -80,16 +80,16 @@
   }
 
   .main-header__promo {
-    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $title-desktop-font-size;
     font-weight: 300;
     padding-top: $default-padding;
     padding-right: $default-padding;
     padding-bottom: $default-padding;
     padding-left: $default-padding;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     &--photo {
       padding-left: 350px;
       padding-right: 350px;

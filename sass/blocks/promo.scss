@@ -1,28 +1,38 @@
 .promo {
-  font-weight: 400;
-  font-family: $font-family;
-  text-align: center;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $default-padding;
+  padding-right: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
   &__descr {
-    color: $basic-font-color;
+    padding-top: 10px;
     font-size: $basic-font-size;
     line-height: 30px;
+    font-family: $font-family;
+    text-align: center;
+    color: $basic-font-color;
     background-color: $main-bg-color;
-    padding-top: 30px;
-    padding-bottom: 20px;
-    padding-left: $default-padding;
-    padding-right: $default-padding;
   }
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
-  .promo__descr {
-    font-size: 18px;
-    line-height: 30px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-right: 150px;
-    padding-left: 150px;
+  .promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: $default-padding;
+    padding-right: $default-padding;
+    padding-bottom: $default-padding;
+    padding-left: $default-padding;
+    .promo__descr {
+      font-size: $basic-tablet-font-size;
+      padding-top: 40px;
+      padding-right: 150px;
+      padding-bottom: 40px;
+      padding-left: 150px;
+    }
   }
 }
 
@@ -31,14 +41,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    line-height: 30px;
-    padding-top: 72px;
+    padding-top: $default-padding;
     padding-right: $default-padding;
-    padding-bottom: 72px;
+    padding-bottom: $default-padding;
     padding-left: $default-padding;
     &__descr {
       font-size: $basic-desktop-font-size;
+      padding-top: 52px;
       padding-right: 300px;
+      padding-bottom: 52px;
       padding-left: 300px;
     }
   }

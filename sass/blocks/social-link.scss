@@ -1,18 +1,18 @@
 .social-link {
-  @include block;
+  @include inline-block-top;
+  width: 45px;
+  height: 45px;
+  margin-top: 20px;
+  margin-right: 3px;
+  margin-bottom: 20px;
+  margin-left: 3px;
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+  cursor: pointer;
   color: #ffffff;
   border: $network-border;
   border-radius: $network-border-radius;
-  font-size: 0;
-  line-height: 0;
-  width: 45px;
-  height: 45px;
-  text-decoration: none;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 3px;
-  margin-right: 3px;
   background-color: $main-bg-color;
 }
 
