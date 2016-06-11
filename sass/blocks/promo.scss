@@ -27,12 +27,19 @@
 }
 
 @media (min-width: $desktop-widths) {
-  .promo__descr {
-    font-size: 18px;
+  .promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     line-height: 30px;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding-right: 300px;
-    padding-left: 300px;
+    padding-top: 72px;
+    padding-right: $default-padding;
+    padding-bottom: 72px;
+    padding-left: $default-padding;
+    &__descr {
+      font-size: $basic-desktop-font-size;
+      padding-right: 300px;
+      padding-left: 300px;
+    }
   }
 }

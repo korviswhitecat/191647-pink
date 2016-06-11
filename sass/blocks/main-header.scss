@@ -82,10 +82,10 @@
   .main-header__promo {
     font-size: 50px;
     font-weight: 300;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-top: 68px;
-    padding-bottom: 78px;
+    padding-top: $default-padding;
+    padding-right: $default-padding;
+    padding-bottom: $default-padding;
+    padding-left: $default-padding;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -93,6 +93,8 @@
     &--photo {
       padding-left: 350px;
       padding-right: 350px;
+      padding-top: 68px;
+      padding-bottom: 78px;
     }
   }
 

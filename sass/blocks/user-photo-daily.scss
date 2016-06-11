@@ -57,7 +57,39 @@
 }
 
 @media (min-width: $desktop-widths) {
-  .user-photo-daily__info-wrapper {
-    width: 940px;
+
+  .user-photo-daily {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    &__info-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      width: 940px;
+      box-sizing: border-box;
+      padding-top: 30px;
+      padding-left: 25px;
+    }
+    &__title {
+      min-width: 300px;
+      order: -2;
+    }
+    &__likes {
+      order: -1;
+      margin-left: auto;
+      min-width: 150px;
+      padding-left: 0;
+    }
+    &__comment {
+      min-width: 700px;
+    }
+  }
+  .user-photo-daily img {
+    height: 507px;
+    width: 100%;
   }
 }

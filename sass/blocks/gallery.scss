@@ -1,7 +1,13 @@
 .gallery {
-  text-align: center;
-  font-weight: 400;
-  font-family: $font-family;
   padding-left: 17px;
   padding-right: 17px;
+  font-weight: 400;
+  font-family: $font-family;
+  text-align: center;
+}
+
+@media (min-width: $desktop-widths) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
