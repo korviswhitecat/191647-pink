@@ -4,17 +4,17 @@
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
   padding: 0;
   &__tools {
-    padding-top: $default-padding;
-    /*background: rgba(0, 0, 0, 0.3);*/
+    /*padding-top: $default-padding;
+    background: rgba(0, 0, 0, 0.3);*/
     background-color: #2b3848;
   }
   &__logo {
     @include block;
     width: 100%;
     box-sizing: border-box;
-    padding-left: $default-padding;
+    /*padding-left: $default-padding;
     padding-right: 30px;
-    padding-bottom: $default-padding;
+    padding-bottom: $default-padding;*/
   }
   &__promo {
     color: #ffffff;
@@ -68,18 +68,37 @@
 }
 
 @media (min-width: $desktop-widths) {
-  .main-header {
-    position: relative;
-  }
   .main-header__tools {
-    @include clearfix;
-    padding-right: 110px;
-    padding-left: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
+
   .main-header__logo {
     width: 160px;
-    float: left;
+    margin-left: 130px;
   }
+
+  .main-header__promo {
+    font-size: 50px;
+    font-weight: 300;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 68px;
+    padding-bottom: 78px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &--photo {
+      padding-left: 350px;
+      padding-right: 350px;
+    }
+  }
+
+
+
+  /*
 
   .main-header__promo {
     font-size: 50px;
@@ -104,6 +123,6 @@
   .main-header--index {
     min-height: 700px;
     background-color: #2b3848;
-  }
+  }*/
 
 }
