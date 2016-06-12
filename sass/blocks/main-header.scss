@@ -4,8 +4,8 @@
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
   padding: 0;
   &__tools {
-    /*padding-top: $default-padding;
-    background: rgba(0, 0, 0, 0.3);*/
+    padding-top: $default-padding;
+    background: rgba(0, 0, 0, 0.3);
     background-color: #2b3848;
   }
   &__logo {

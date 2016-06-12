@@ -13,19 +13,9 @@
   }
 }
 
-
-
-.main-nav__item a {
-  color: #ffffff;
-  text-decoration: none;
-  @include block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
 .main-nav__toggle {
   float: right;
-  @include block;
+  @include inline-block-top;
   width: 50px;
   height: 27px;
   font-size: 0;
@@ -33,6 +23,26 @@
   cursor: pointer;
   background: url("../img/icon-menu-burger.svg") no-repeat center;
 }
+
+.main-nav--opened {
+  @include inline-block-top;
+  width: 50px;
+  height: 27px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background: url("../img/icon-menu-cross.svg") no-repeat center;
+}
+
+
+.main-nav__item a {
+  color: #ffffff;
+  text-decoration: none;
+  @include inline-block-top;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 
 @media (min-width: $desktop-widths) {
 

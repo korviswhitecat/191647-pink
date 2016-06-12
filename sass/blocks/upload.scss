@@ -1,62 +1,55 @@
 .upload {
-  text-align: center;
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
   font-weight: 400;
   font-family: $font-family;
   line-height: 30px;
+  text-align: center;
   color: #283645;
-  padding-top: $default-padding;
-  padding-bottom: $default-padding;
-}
-
-.upload__promo {
-  background-color: $main-bg-color;
-  padding-bottom: 40px;
-  padding-left: $default-padding;
-  padding-right: $default-padding;
-
-}
-
-.upload__wrapper {
-  background-color: $extra-bg-color;
-  padding-top: $default-padding;
-}
-
-.upload__filters-range {
-  padding-left: $default-padding * 2;
-  padding-right: $default-padding * 2;
-}
-
-.upload__range-tool {
-  cursor: pointer;
-}
-
-.upload__range-tool:nth-child(n+2) {
-  display: none;
-}
-
-.upload__filter-tool {
-  @include block;
-  vertical-align: baseline;
-  width: 44px;
-  height: 44px;
-  font-size: 0;
-  cursor: pointer;
-  margin-left: 3px;
-  margin-right: 3px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.upload__filter-tool--crop {
-  background: url("../img/icon-editor-crop.svg") no-repeat center;
-}
-
-.upload__filter-tool--fill {
-  background: url("../img/icon-editor-fill.svg") no-repeat center;
-}
-
-.upload__filter-tool--contrast {
-  background: url("../img/icon-editor-contrast.svg") no-repeat center;
+  &__promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: $default-padding;
+    padding-bottom: 40px;
+    padding-left: $default-padding;
+    background-color: $main-bg-color;
+  }
+  &__wrapper {
+    background-color: $extra-bg-color;
+    padding-top: $default-padding;
+  }
+  &__filters-range {
+    padding-left: $default-padding * 2;
+    padding-right: $default-padding * 2;
+  }
+  &__range-tool {
+    cursor: pointer;
+  }
+  &__range-tool:nth-child(n+2) {
+    display: none;
+  }
+  &__filter-tool {
+    @include block;
+    vertical-align: baseline;
+    width: 44px;
+    height: 44px;
+    font-size: 0;
+    cursor: pointer;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    &--crop {
+      background: url("../img/icon-editor-crop.svg") no-repeat center;
+    }
+    &--fill {
+      background: url("../img/icon-editor-fill.svg") no-repeat center;
+    }
+    &--contrast {
+      background: url("../img/icon-editor-contrast.svg") no-repeat center;
+    }
+  }
 }
 
 .upload input[type=range] {
@@ -169,71 +162,81 @@
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .upload {
-    padding-top: 42px;
-  }
+    display: flex;
+    flex-direction: column;
+    &__promo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 25px;
+      padding-bottom: 15px;
+      margin-bottom: 50px;
+    }
+    &__form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding-top: $default-padding;
+      padding-right: $default-padding;
+      padding-bottom: $default-padding  * 2;
+      padding-left: $default-padding;
+    }
+    &__filters-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 275px;
+      box-sizing: border-box;
+    }
+    &__filters-options {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-right: 30px;
+    }
+    &__filter-tool {
+      width: 22px;
+      height: 22px;
+    }
 
-  .upload__promo {
-    padding-bottom: 60px;
-  }
-
-  .upload__wrapper {
-    padding-top: 55px;
-    @include clearfix;
+    &__filter-tool:nth-child(n+2) {
+      margin-top: 40px;
+    }
+    &__filters-range {
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      padding: 0;
+    }
+    &__range-tool:nth-child(n+2) {
+      display: inline-block;
+    }
+    &__range-tool:first-child {
+      margin-top: 20px;
+    }
+    &__range-tool:nth-child(n+2) {
+      margin-top: 67px;
+    }
   }
 
   .upload__wrapper img {
-    float: left;
-    margin-left: 40px;
-  }
-
-  .upload__filters-options {
-    float: left;
-  }
-
-  .upload__filter-tool {
-    display: block;
-    margin-top: 0;
-    margin-left: 48px;
-    width: 22px;
-    height: 22px;
-  }
-
-  .upload__filter-tool:first-child {
-    margin-top: 15px;
-  }
-
-  .upload__filter-tool:nth-child(n+2) {
-    margin-top: 40px;
-  }
-
-
-  .upload__filters-range {
-    float: right;
-    width: 200px;
-    margin-right: 25px;
-  }
-
-  .upload__range-tool:nth-child(n+2) {
-    display: inline-block;
-  }
-
-  .upload__range-tool:first-child {
-    margin-top: 25px;
-  }
-
-  .upload__range-tool:nth-child(n+2) {
-    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 45px;
   }
 
   .upload__buttons {
-    float: left;
-    margin-top: 100px;
-    margin-left: -40px;
-    width: 265px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 260px;
+    padding: 0;
+    margin: 0;
   }
-
   .upload__button {
-    @include block;
+    width: 260px;
+    margin-bottom: 0;
   }
 }
 
