@@ -4,6 +4,7 @@
   text-align: left;
   font-weight: normal;
   font-family: $font-family;
+  background-color: #f2f2f2;
   &__info-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -13,7 +14,6 @@
     padding-bottom: $default-padding;
     padding-left: $default-padding;
     padding-right: $default-padding;
-    background-color: #f2f2f2;
   }
   &__name {
     font-size: $basic-font-size;

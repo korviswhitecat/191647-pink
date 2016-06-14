@@ -18,39 +18,21 @@
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
-  .promo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: $default-padding;
-    padding-right: $default-padding;
-    padding-bottom: $default-padding;
-    padding-left: $default-padding;
-    .promo__descr {
-      font-size: $basic-tablet-font-size;
-      padding-top: 40px;
-      padding-right: 150px;
-      padding-bottom: 40px;
-      padding-left: 150px;
-    }
+  .promo__descr {
+    font-size: $basic-tablet-font-size;
+    padding-top: 40px;
+    padding-right: 150px;
+    padding-bottom: 40px;
+    padding-left: 150px;
   }
 }
 
 @media (min-width: $desktop-widths) {
-  .promo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: $default-padding;
-    padding-right: $default-padding;
-    padding-bottom: $default-padding;
-    padding-left: $default-padding;
-    &__descr {
-      font-size: $basic-desktop-font-size;
-      padding-top: 52px;
-      padding-right: 300px;
-      padding-bottom: 52px;
-      padding-left: 300px;
-    }
+  .promo__descr {
+    font-size: $basic-desktop-font-size;
+    padding-top: 52px;
+    padding-right: 300px;
+    padding-bottom: 52px;
+    padding-left: 300px;
   }
 }

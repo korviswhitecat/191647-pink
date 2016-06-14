@@ -1,22 +1,27 @@
 .contest {
-  text-align: center;
-  font-weight: 400;
-  font-family: $font-family;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: $default-padding;
+  padding-right: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
     &__descr {
-    color: $basic-font-color;
-    font-size: $basic-font-size;
-    line-height: 30px;
-    background-color: $main-bg-color;
-    padding-top: 30px;
+    padding-top: 10px;
     padding-bottom: 0;
     padding-left: $default-padding;
     padding-right: $default-padding;
+    font-size: $basic-font-size;
+    line-height: 30px;
+    font-family: $font-family;
+    text-align: center;
+    background-color: $main-bg-color;
   }
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .contest__descr {
-    font-size: 18px;
+    font-size: $basic-tablet-font-size;
     line-height: 30px;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -27,10 +32,10 @@
 
 @media (min-width: $desktop-widths) {
   .contest__descr {
-    font-size: 18px;
+    font-size: $basic-desktop-font-size;
     line-height: 30px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 55px;
+    padding-bottom: 15px;
     padding-right: 250px;
     padding-left: 250px;
   }

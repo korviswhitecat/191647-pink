@@ -1,12 +1,11 @@
 .main-header {
   font-family: $font-family;
-  background-color: #2b3848;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
+  background: #2b3848;
+  /*background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;*/
   padding: 0;
   &__tools {
     padding-top: $default-padding;
     background: rgba(0, 0, 0, 0.3);
-    background-color: #2b3848;
   }
   &__logo {
     @include block;
@@ -17,7 +16,6 @@
     padding-bottom: $default-padding;*/
   }
   &__promo {
-    color: #ffffff;
     font-size: 24px;
     padding-top: 25px;
     padding-bottom: 50px;
@@ -25,6 +23,9 @@
     padding-right: $default-padding;
     text-align: center;
     font-weight: 300;
+    background: #2b3848;
+    color: #ffffff;
+
     &--photo {
       padding-bottom: 70px;
     }
@@ -45,8 +46,8 @@
   .main-header__promo {
     font-size: 50px;
     font-weight: 300;
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top: 58px;
+    padding-bottom: 68px;
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
@@ -72,6 +73,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 0;
   }
 
   .main-header__logo {
@@ -95,6 +97,12 @@
       padding-right: 350px;
       padding-top: 68px;
       padding-bottom: 78px;
+    }
+    &--form {
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 69px;
+      padding-bottom: 79px;
     }
   }
 
