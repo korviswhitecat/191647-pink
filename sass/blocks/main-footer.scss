@@ -8,20 +8,33 @@
   font-size: $basic-font-size;
   line-height: 18px;
   color: $basic-font-color;
+
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 3px;
+  }
+
+  &__copyright-link {
+    @include inline-block-top;
+    width: 27px;
+    height: 34px;
+    font-size: 0;
+    background-image: url("../img/logo-htmlacademy.svg");
+    margin-left: 15px;
+  }
+
+  &__copyright-link-wrapper,
+  &__developer {
+    @include inline-block-top;
+  }
 }
 
-.main-footer__copyright-link-wrapper,
-.main-footer__developer {
-  @include inline-block-top;
-}
-
-.main-footer__copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+
   .main-footer {
     display: flex;
     flex-direction: row;
@@ -31,18 +44,35 @@
     padding-right: 40px;
     padding-bottom: 15px;
     box-sizing: border-box;
+
+    &__copyright {
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-widths) {
+
   .main-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 60px;
     padding-left: 130px;
     padding-right: 130px;
-    padding-bottom: 25px;
+    padding-bottom: 45px;
     box-sizing: border-box;
+
+    &__copyright {
+      margin-top: 0;
+      padding-top: 0;
+      font-size: $basic-desktop-font-size;
+    }
+
+    &__copyright-link-wrapper {
+      margin-top: 5px;
+    }
   }
 }

@@ -1,20 +1,26 @@
 .main-header {
   font-family: $font-family;
   background: #2b3848;
-  /*background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;*/
-  padding: 0;
-  &__tools {
-    padding-top: $default-padding;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  padding-bottom: 10px;
+
+  &__wrapper {
     background: rgba(0, 0, 0, 0.3);
   }
+
+  &__tools {
+    box-sizing: border-box;
+    padding-top: $default-padding;
+    padding-left: $default-padding;
+    padding-right: $default-padding;
+    padding-bottom: $default-padding;
+  }
   &__logo {
-    @include block;
+    @include inline-block-top;
     width: 100%;
     box-sizing: border-box;
-    /*padding-left: $default-padding;
-    padding-right: 30px;
-    padding-bottom: $default-padding;*/
   }
+
   &__promo {
     font-size: 24px;
     padding-top: 25px;
@@ -23,11 +29,14 @@
     padding-right: $default-padding;
     text-align: center;
     font-weight: 300;
-    background: #2b3848;
     color: #ffffff;
+    box-sizing: border-box;
 
     &--photo {
       padding-bottom: 70px;
+      padding-left: 50px;
+      padding-right: 50px;
+
     }
     &--index {
       font-size: 0;
@@ -37,31 +46,41 @@
   }
 }
 
+
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
 
-  .main-header {
-    position: relative;
+  .main-header__tools {
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 40px;
+    padding-bottom: 40px;
   }
 
   .main-header__promo {
     font-size: 50px;
+    line-height: 60px;
     font-weight: 300;
-    padding-top: 58px;
+    padding-top: 70px;
     padding-bottom: 68px;
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
-    &--index {
-      width: 200px;
-      background-image: none;
-      position: absolute;
-      top: 250px;
-      left: 0;
-      font-size: 40px;
-      z-index: 10;
+    &--photo {
+      padding-bottom: 130px;
     }
   }
+
+
   /*
+  &--index {
+    width: 200px;
+    background-image: none;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    font-size: 40px;
+    z-index: 10;
+  }
   .main-header--index {
     min-height: 700px;
     background-color: #2b3848;
@@ -74,12 +93,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 0;
+    padding: 0;
   }
 
   .main-header__logo {
     width: 160px;
-    margin-left: 130px;
+    margin-left: 135px;
   }
 
   .main-header__promo {
@@ -93,12 +112,15 @@
     padding-bottom: $default-padding;
     padding-left: $default-padding;
     text-align: center;
+
     &--photo {
-      padding-left: 350px;
-      padding-right: 350px;
-      padding-top: 68px;
-      padding-bottom: 78px;
+      padding-left: 400px;
+      padding-right: 400px;
+      padding-top: 65px;
+      padding-bottom: 90px;
+      line-height: 60px;
     }
+    
     &--form {
       padding-left: 150px;
       padding-right: 150px;

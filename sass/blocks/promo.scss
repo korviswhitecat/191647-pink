@@ -8,6 +8,9 @@
   padding-left: $default-padding;
   &__descr {
     padding-top: 10px;
+    padding-right: $default-padding;
+    padding-left: $default-padding;
+    padding-bottom: 15px;
     font-size: $basic-font-size;
     line-height: 30px;
     font-family: $font-family;
@@ -19,20 +22,21 @@
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .promo__descr {
+    padding-top: 55px;
+    padding-right: 110px;
+    padding-bottom: 38px;
+    padding-left: 110px;
     font-size: $basic-tablet-font-size;
-    padding-top: 40px;
-    padding-right: 150px;
-    padding-bottom: 40px;
-    padding-left: 150px;
+    line-height: 30px;
   }
 }
 
 @media (min-width: $desktop-widths) {
   .promo__descr {
-    font-size: $basic-desktop-font-size;
     padding-top: 52px;
-    padding-right: 300px;
+    padding-right: 280px;
     padding-bottom: 52px;
-    padding-left: 300px;
+    padding-left: 280px;
+    font-size: $basic-desktop-font-size;
   }
 }

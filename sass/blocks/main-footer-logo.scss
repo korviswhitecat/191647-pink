@@ -6,14 +6,18 @@
   padding-bottom: 20px;
 }
 
+
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  .main-footer-logo {
+    padding-top: 0;
+  }
 }
 
+
 @media (min-width: $desktop-widths) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
+  .main-footer-logo {
+    padding-top: 0;
+  }
 }
