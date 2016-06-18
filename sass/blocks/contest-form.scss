@@ -10,20 +10,56 @@
   margin-bottom: 45px;
 }
 
-.contest-form__os-checker,
-.contest-form__user-achievements,
-.contest-form__user-review,
-.contest-form__user-contacts,
 .contest-form__user-details {
   padding-top: $default-padding;
   padding-bottom: $default-padding;
   padding-left: $default-padding;
   padding-right: $default-padding;
+  box-sizing: border-box;
+}
+
+.contest-form__user-achievements {
+  padding-top: 40px;
+  padding-bottom: 18px;
+  padding-left: 55px;
+  padding-right: $default-padding;
+  box-sizing: border-box;
+}
+
+.contest-form__achievements-title {
+  padding-left: $default-padding;
+  padding-right: 60px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.contest-form__user-achievements li {
+  margin-bottom: 28px;
+}
+
+.contest-form__user-contacts fieldset {
+  padding-top: 35px;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+  box-sizing: border-box;
+
+}
+
+.contest-form__os-checker,
+
+.contest-form__user-review
+ {
+  padding-top: $default-padding;
+  padding-bottom: $default-padding;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
+  box-sizing: border-box;
 }
 
 .contest-form__legend {
   color: $decoration-font-color;
-  @include block;
+  @include inline-block-top;
   font-size: $legend-font-size;
   padding-left: 22px;
   text-transform: uppercase;
@@ -32,6 +68,7 @@
 .contest-form__user-review {
   text-align: center;
 }
+
 .contest-form__user-contacts-legend,
 .contest-form__review-title,
 .contest-form__os-title,
@@ -59,10 +96,10 @@
   border-radius: $field-border-radius;
   padding-top: 17px;
   padding-bottom: 17px;
-  padding-left: 24px;
+  padding-left: 22px;
   padding-right: 24px;
-  margin-top: 5px;
   margin-bottom: 20px;
+  margin-top: 7px;
   width: 100%;
   box-sizing: border-box;
   outline: none;

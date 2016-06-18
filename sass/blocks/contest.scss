@@ -4,8 +4,9 @@
   align-items: center;
   padding-top: $default-padding;
   padding-right: $default-padding;
-  padding-bottom: $default-padding;
+  padding-bottom: 8px;
   padding-left: $default-padding;
+
     &__descr {
     padding-top: 10px;
     padding-bottom: 0;
@@ -19,6 +20,7 @@
   }
 }
 
+
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .contest__descr {
     font-size: $basic-tablet-font-size;
@@ -29,6 +31,7 @@
     padding-left: 150px;
   }
 }
+
 
 @media (min-width: $desktop-widths) {
   .contest__descr {
