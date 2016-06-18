@@ -89,17 +89,19 @@
         <div class="contest-form__user-contacts  container">
             <fieldset>
               <legend class="contest-form__user-contacts-legend">Контактная информация</legend>
-              <label class="contest-form__legend" for="tel">
-                <span class="contest-form__legend--mobile">Номерок телефончика</span>
-                <span class="contest-form__legend--not-mobile">Номер телефона</span>
-              </label>
-              <input class="contest-form__field" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста" required>
-              <label class="contest-form__legend" for="email">
-                <span class="contest-form__legend--mobile">Адресок почты</span>
-                <span class="contest-form__legend--not-mobile">Адрес почты</span>
-              </label>
-              <input class="contest-form__field" type="email" name="email" id="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Email, пожалуйста" required>
-            </fieldset>
+              <div class="contest-form__user-contacts-wrapper">
+                <label class="contest-form__legend" for="tel">
+                  <span class="contest-form__legend--mobile">Номерок телефончика</span>
+                  <span class="contest-form__legend--not-mobile">Номер телефона</span>
+                </label>
+                <input class="contest-form__field" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста" required>
+                <label class="contest-form__legend" for="email">
+                  <span class="contest-form__legend--mobile">Адресок почты</span>
+                  <span class="contest-form__legend--not-mobile">Адрес почты</span>
+                </label>
+                <input class="contest-form__field" type="email" name="email" id="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Email, пожалуйста" required>
+             </div>
+           </fieldset>
         </div>
         <div class="contest-form__os-checker">
           <div class="container">
@@ -124,7 +126,7 @@
         </div>
         <div class="contest-form__user-review  container">
           <fieldset>
-          <label class="contest-form__review-title" for="review">Опишите свои эмоции</label>
+          <legend class="contest-form__review-title">Опишите свои эмоции</legend>
           <textarea class="contest-form__review-content" name="review" id="review" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
           </fieldset>
         </div>
@@ -133,12 +135,12 @@
           <input class="contest-form__button" type="submit" value="Отправить форму">
         </div>
         <div class="contest-form__warning">
-          <b>*</b> - обязательные<span class="contest-form__warning--desktop"> для заполнения</span> поля
+          <b>*</b> — обязательные<span class="contest-form__warning--desktop"> для заполнения</span> поля
         </div>
         </div>
       </form>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer  container">
       <div class="main-footer-logo">
         <img src="img/logo-pink-blue-mobile.svg" alt="Выбирай Pink!">
       </div>
