@@ -42,7 +42,7 @@
     <main>
       <div class="contest  container">
         <p class="contest__descr">Поделитесь своей историей и получите шанс выиграть ценный приз -
-        1000 миль на вашу бонусную карту!</p>
+        1000 миль на вашу бонусную карту! <span class="contest__descr--additional">Пожалуйста, заполните форму ниже:</span></p>
       </div>
       <form class="contest-form">
         <div class="contest-form__user-details  container">
@@ -57,7 +57,7 @@
           <div class="container">
             <fieldset>
               <legend class="contest-form__achievements-title">Ваши безбашенные достижения в путешествии</legend>
-              <ul>
+              <ul class="contest-form__achievements-list">
                 <li>
                   <input class="contest-form__achievements-checker" type="checkbox" name="selfie" id="selfie" checked>
                   <label class="contest-form__achievements-item" for="selfie">Сделал селфи с акулой</label>
@@ -86,18 +86,23 @@
             </fieldset>
           </div>
         </div>
-        <div class="contest-form__user-contacts">
-          <div class="container">
+        <div class="contest-form__user-contacts  container">
             <fieldset>
               <legend class="contest-form__user-contacts-legend">Контактная информация</legend>
-              <label class="contest-form__legend" for="tel">Номерок телефончика</label>
+              <label class="contest-form__legend" for="tel">
+                <span class="contest-form__legend--mobile">Номерок телефончика</span>
+                <span class="contest-form__legend--not-mobile">Номер телефона</span>
+              </label>
               <input class="contest-form__field" type="tel" name="tel" id="tel" pattern="[0-9]{1}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Номер, пожалуйста" required>
-              <label class="contest-form__legend" for="email">Адресок почты</label>
+              <label class="contest-form__legend" for="email">
+                <span class="contest-form__legend--mobile">Адресок почты</span>
+                <span class="contest-form__legend--not-mobile">Адрес почты</span>
+              </label>
               <input class="contest-form__field" type="email" name="email" id="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" placeholder="Email, пожалуйста" required>
             </fieldset>
-          </div>
         </div>
         <div class="contest-form__os-checker">
+          <div class="container">
           <fieldset>
             <legend class="contest-form__os-title">С каким приложением путешествовали?</legend>
             <ul>
@@ -116,13 +121,14 @@
             </ul>
           </fieldset>
         </div>
-        <div class="contest-form__user-review">
+        </div>
+        <div class="contest-form__user-review  container">
           <fieldset>
           <label class="contest-form__review-title" for="review">Опишите свои эмоции</label>
           <textarea class="contest-form__review-content" name="review" id="review" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
           </fieldset>
         </div>
-        <div class="contest-form__submit-footer">
+        <div class="contest-form__submit-footer  container">
         <div class="contest-form__submit-form">
           <input class="contest-form__button" type="submit" value="Отправить форму">
         </div>
