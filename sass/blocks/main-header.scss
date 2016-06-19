@@ -1,23 +1,26 @@
 .main-header {
   font-family: $font-family;
-  background-color: #2b3848;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat top;
-  padding: 0;
-  &__tools {
-    padding-top: $default-padding;
-    /*background: rgba(0, 0, 0, 0.3);*/
-    background-color: #2b3848;
+  background: #2b3848;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+
+  &__wrapper {
+    background: rgba(0, 0, 0, 0.3);
   }
-  &__logo {
-    @include block;
-    width: 100%;
+
+  &__tools {
     box-sizing: border-box;
+    padding-top: $default-padding;
     padding-left: $default-padding;
-    padding-right: 30px;
+    padding-right: $default-padding;
     padding-bottom: $default-padding;
   }
+  &__logo {
+    @include inline-block-top;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
   &__promo {
-    color: #ffffff;
     font-size: 24px;
     padding-top: 25px;
     padding-bottom: 50px;
@@ -25,61 +28,133 @@
     padding-right: $default-padding;
     text-align: center;
     font-weight: 300;
+    color: #ffffff;
+    box-sizing: border-box;
+
     &--photo {
-      padding-bottom: 70px;
+      padding-bottom: 78px;
+      padding-left: 50px;
+      padding-right: 50px;
     }
+
+    &--form {
+      padding-bottom: 55px;
+      line-height: 30px;
+    }
+
     &--index {
       font-size: 0;
-      background: url("../img/iphone-hand-mobile@1x.png") no-repeat bottom;
-      min-height: 310px;
+      min-height: 390px;
+      padding-bottom: 0;
     }
   }
 }
 
+
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
 
-  .main-header {
-    position: relative;
+  .main-header__tools {
+    padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+
+  .main-heared__wrapper {
+    box-sizing: border-box;
   }
 
   .main-header__promo {
     font-size: 50px;
+    line-height: 60px;
     font-weight: 300;
-    padding-top: 60px;
-    padding-bottom: 70px;
+    padding-top: 70px;
+    padding-bottom: 68px;
     padding-left: 100px;
     padding-right: 100px;
     text-align: center;
-    &--index {
-      width: 200px;
-      background-image: none;
-      position: absolute;
-      top: 250px;
-      left: 0;
-      font-size: 40px;
-      z-index: 10;
+
+    &--photo {
+      padding-bottom: 130px;
     }
+
+    &--form {
+      padding-bottom: 80px;
+    }
+
+    &--index {
+      min-height: 240px;
+      padding-bottom: 0;
+      font-size: 40px;
+      width: 400px;
+      box-sizing: border-box;
+
+    }
+  }
+
+  /*
+
+  &--index {
+    width: 200px;
+    background-image: none;
+    position: absolute;
+    top: 250px;
+    left: 0;
+    font-size: 40px;
+    z-index: 10;
   }
   .main-header--index {
     min-height: 700px;
     background-color: #2b3848;
   }
-
+*/
 }
 
 @media (min-width: $desktop-widths) {
-  .main-header {
-    position: relative;
-  }
   .main-header__tools {
-    @include clearfix;
-    padding-right: 110px;
-    padding-left: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
   }
+
   .main-header__logo {
     width: 160px;
-    float: left;
+    margin-left: 135px;
   }
+
+  .main-header__promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $title-desktop-font-size;
+    font-weight: 300;
+    padding-top: $default-padding;
+    padding-right: $default-padding;
+    padding-bottom: $default-padding;
+    padding-left: $default-padding;
+    text-align: center;
+
+    &--photo {
+      padding-left: 400px;
+      padding-right: 400px;
+      padding-top: 65px;
+      padding-bottom: 100px;
+      line-height: 60px;
+    }
+
+    &--form {
+      padding-left: 150px;
+      padding-right: 150px;
+      padding-top: 68px;
+      line-height: 55px;
+      padding-bottom: 105px;
+    }
+  }
+
+
+
+  /*
 
   .main-header__promo {
     font-size: 50px;
@@ -104,6 +179,6 @@
   .main-header--index {
     min-height: 700px;
     background-color: #2b3848;
-  }
+  }*/
 
 }

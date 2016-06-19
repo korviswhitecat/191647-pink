@@ -1,37 +1,39 @@
 .social-link {
-  @include block;
+  @include inline-block-top;
+  width: 45px;
+  height: 45px;
+  margin-top: 20px;
+  margin-right: 5px;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+  cursor: pointer;
   color: #ffffff;
   border: $network-border;
   border-radius: $network-border-radius;
-  font-size: 0;
-  line-height: 0;
-  width: 45px;
-  height: 45px;
-  text-decoration: none;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 3px;
-  margin-right: 3px;
   background-color: $main-bg-color;
-}
 
-.social-link:hover {
-  border: $network-hover-border;
-}
+  &:hover {
+    border: $network-hover-border;
+  }
 
-.social-link:active {
-  border: $network-active-border;
-}
+  &:active {
+    border: $network-active-border;
+  }
 
-.social-link--twitter {
-  background: url("../img/icon-twitter.svg") no-repeat center;
-}
+  &--twitter {
+    background: url("../img/icon-twitter.svg") no-repeat center;
+  }
 
-.social-link--facebook {
-  background: url("../img/icon-facebook.svg") no-repeat center;
-}
+  &--facebook {
+    background: url("../img/icon-facebook.svg") no-repeat center;
+  }
 
-.social-link--youtube {
-  background: url("../img/icon-youtube.svg") no-repeat center;
+  &--youtube {
+    background-image: url("../img/icon-youtube.svg");
+    background-repeat: no-repeat;
+    background-position: 20px 15px;
+  }
 }

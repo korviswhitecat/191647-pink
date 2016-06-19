@@ -1,56 +1,78 @@
 .main-footer {
-  text-align: center;
-  color: $basic-font-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: $font-family;
   background-color: $main-bg-color;
   font-size: $basic-font-size;
   line-height: 18px;
-}
+  color: $basic-font-color;
 
+  &__copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 3px;
+  }
 
-.main-footer__copyright-link-wrapper,
-.main-footer__developer {
-  @include block;
-  vertical-align: middle;
+  &__copyright-link {
+    @include inline-block-top;
+    width: 27px;
+    height: 34px;
+    font-size: 0;
+    background-image: url("../img/logo-htmlacademy.svg");
+    margin-left: 15px;
+  }
+
+  &__copyright-link-wrapper,
+  &__developer {
+    @include inline-block-top;
+  }
 }
 
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+
   .main-footer {
-    @include clearfix;
-    position: relative;
-    padding-bottom: 20px;
-  }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
 
-  .main-footer-logo {
-    position: absolute;
-    top: 0;
-    left: 40px;
-  }
-
-  .main-footer__copyright {
-    position: absolute;
-    top: 20px;
-    right: 40px;
+    &__copyright {
+      margin-top: 0;
+      padding-top: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-widths) {
+
   .main-footer {
-    @include clearfix;
-    position: relative;
-    padding-bottom: 50px;
-  }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 45px;
+    box-sizing: border-box;
 
-  .main-footer-logo {
-    position: absolute;
-    top: 0;
-    left: 130px;
-  }
+    &__copyright {
+      margin-top: 0;
+      padding-top: 0;
+      font-size: $basic-desktop-font-size;
+    }
 
-  .main-footer__copyright {
-    position: absolute;
-    top: 20px;
-    right: 130px;
+    &__copyright-link-wrapper {
+      margin-top: 5px;
+    }
   }
 }

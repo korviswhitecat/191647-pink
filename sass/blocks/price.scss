@@ -6,6 +6,26 @@
   font-size: $basic-font-color;
   line-height: 30px;
   text-align: center;
+  margin-top: 125px;
+  overflow: hidden;
+
+}
+
+
+.price__tariff {
+  display: inline-block;
+  width: 300px;
+}
+
+
+.price__options {
+  width: 1000px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.price__options {
+  margin-left: -350px;
 }
 
 .price__tariff-title {

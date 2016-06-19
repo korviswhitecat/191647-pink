@@ -2,57 +2,68 @@
   text-align: center;
   font-family: $font-family;
   color: $basic-font-color;
-  padding-top: $default-padding * 2;
-  padding-left: $default-padding;
-  padding-right: $default-padding;
+  padding-top: 48px;
+  box-sizing: border-box;
   background-color: $extra-bg-color;
-}
 
-.features__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  font-size: 0;
-}
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 
-.features__item-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  color: $title-font-color;
-}
+  &__item p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 
-.features__item-descr {
-  font-weight: 400;
-  font-size: $basic-font-size;
-  line-height: 24px;
-  margin-bottom: 25px;
-}
+  &__item p:last-child {
+    margin-top: 12px;
+    margin-bottom: 30px;
+  }
 
-.features__img {
-  margin-top: 40px;
-  height: 280px;
-  font-size: 0;
-  background: url("../img/iphone-screen-mobile@1x.png") no-repeat top;
+  &__item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: $title-font-color;
+  }
+
+  &__item-descr {
+    font-weight: 400;
+    font-size: $basic-font-size;
+    line-height: 24px;
+    margin-bottom: 25px;
+  }
+
+  &__img {
+    margin-top: 40px;
+    height: 280px;
+    font-size: 0;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat top;
+  }
+
 }
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .features {
-    padding-left: 300px;
-    width: 320px;
-    position: relative;
-
-  }
-  .features__img {
-    position: absolute;
-    height: 280px;
-    top: 0;
-    font-size: 0;
-    background: url("../img/iphone-screen-mobile@1x.png") no-repeat top;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    padding-left: 340px;
+    &__img {
+      display: none;
+    }
+    &__item {
+      text-align: left;
+    }
   }
 }
 
-
+/*
 @media (min-width: $desktop-widths) {
   .features__item-descr {
     width: 200px;
@@ -76,3 +87,4 @@
 
 
 }
+*/
