@@ -2,7 +2,6 @@
   font-family: $font-family;
   background: #2b3848;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  /*padding-bottom: 10px;*/
 
   &__wrapper {
     background: rgba(0, 0, 0, 0.3);
@@ -45,9 +44,6 @@
 
     &--index {
       font-size: 0;
-      background: url("../img/iphone-hand-mobile@1x.png");
-      background-repeat: no-repeat;
-      background-position: 90px 104px;
       min-height: 390px;
       padding-bottom: 0;
     }
@@ -62,6 +58,10 @@
     padding-left: 45px;
     padding-right: 40px;
     padding-bottom: 40px;
+  }
+
+  .main-heared__wrapper {
+    box-sizing: border-box;
   }
 
   .main-header__promo {
@@ -81,10 +81,19 @@
     &--form {
       padding-bottom: 80px;
     }
+
+    &--index {
+      min-height: 240px;
+      padding-bottom: 0;
+      font-size: 40px;
+      width: 400px;
+      box-sizing: border-box;
+
+    }
   }
 
-
   /*
+
   &--index {
     width: 200px;
     background-image: none;

@@ -38,6 +38,7 @@
   &__wrapper {
     padding-left: 20px;
     padding-right: 20px;
+    position: relative;
   }
 
   &__wrapper p {
@@ -71,22 +72,45 @@
   &__option--windows {
     background: url("../img/logo-microsoft.svg") no-repeat bottom;
   }
+
+  &__img {
+    position: absolute;
+    width: 260px;
+    height: 290px;
+    top: -314px;
+    left: 0;
+    background: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
 }
 
 
 
-
-
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
-  .download-offer {
 
-    /*
-    width: 300px;
-    position: absolute;
-    top: 450px;
-    left: 220px;
-    */
+  .download-offer {
+    background: transparent;
+    margin-left: 40px;
   }
+
+  .download-offer__wrapper {
+    width: 345px;
+    box-sizing: border-box;
+  }
+  .download-offer__link {
+    background: transparent;
+  }
+
+  .download-offer__img {
+    position: absolute;
+    width: 260px;
+    height: 290px;
+    top: -150px;
+    left: 400px;
+    background: url("../img/iphone-hand-mobile@1x.png");
+    background-repeat: no-repeat;
+  }
+
 }
 
 @media (min-width: $desktop-widths) {

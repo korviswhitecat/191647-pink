@@ -1,6 +1,7 @@
 .contacts {
   font-family: $font-family;
   text-align: center;
+  margin-top: 50px;
 }
 
 .contacts__wrapper {
@@ -18,7 +19,10 @@
 }
 
 .contacts__options {
-  margin-bottom: 15px;
+  margin-top: 7px;
+  margin-bottom: 20px;
+  padding-left: $default-padding;
+  padding-right: $default-padding;
 }
 
 .contacts__options a,
@@ -44,16 +48,17 @@
   text-decoration: none;
 }
 
-
 .contats__options-title {
   display: block;
   vertical-align: baseline;
-  color: $title-font-color;
+  color:  #283645;
   font-weight: 700;
+  font-size: 18px;
 }
 
 .contacts__map {
   height: 200px;
+  width: 100%;
   background: url("../img/bg-map-mobile@1x.png") no-repeat center;
   font-size: 0;
 }

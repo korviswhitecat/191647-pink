@@ -42,3 +42,16 @@
     background-color: #b5b9be;
   }
 }
+
+@media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
+  .upload-button {
+    width: 260px;
+    margin-bottom: 0;
+  }
+
+  .upload-button:last-child {
+    margin-top: 20px;
+
+  }
+
+}
