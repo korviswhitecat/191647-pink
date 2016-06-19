@@ -3,58 +3,68 @@
   <head>
     <meta charset="utf-8">
     <title>PINK</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header main-header--index container">
-      <div class=main-header__tools>
-        <div class="main-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" alt="Pink">
-          <button class="main-nav__toggle" type="button"><img src="img/icon-menu-burger.svg" alt="Pink"></button>
-        </div>
-        <nav class="main-nav   main-nav--closed">
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a>Главная</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="photo.html">Фотографии</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html">Конкурс</a>
-              </li>
-              <li class="main-nav__item">
-                <a href="#">HTML Academy</a>
-              </li>
-            </ul>
+    <header class="main-header main-header--index">
+      <div class="main-header__wrapper">
+        <div class="container">
+          <div class=main-header__tools>
+            <div class="main-header__logo">
+              <img src="img/logo-pink-white-mobile.svg" alt="Pink">
+              <button class="main-nav__toggle" type="button"><img src="img/icon-menu-burger.svg" alt="Pink"></button>
+            </div>
+            <nav class="main-nav   main-nav--closed  main-nav--nojs">
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item">
+                    <a>Главная</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="photo.html">Фотографии</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="form.html">Конкурс</a>
+                  </li>
+                  <li class="main-nav__item">
+                    <a href="#">HTML Academy</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
-        </nav>
+        </div>
       </div>
-      <div class="main-header__promo main-header__promo--index">Взгляните на жизнь иначе!</div>
+      <div class="main-header__promo main-header__promo--index">
+        <div class="container">Взгляните на жизнь иначе!</div>
+      </div>
+      <div class="download-offer">
+        <div class="container">
+          <div class="download-offer__wrapper">
+            <a class="download-offer__link" href="#">Скачать приложение</a>
+            <div class="download-offer__option  download-offer__option--ios">
+              Скачать для iOS
+            </div>
+            <div class="download-offer__option  download-offer__option--android">
+              Скачать для Android
+            </div>
+            <div class="download-offer__option  download-offer__option--windows">
+              Скачать для Windows
+            </div>
+            <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </div>
+      </div>
     </header>
     <main>
-      <div class="download-offer  container">
-        <div class="download-offer__wrapper">
-          <a class="download-offer__link" href="#">Скачать приложение</a>
-          <div class="download-offer__option  download-offer__option--ios">
-            Скачать для iOS
-          </div>
-          <div class="download-offer__option  download-offer__option--android">
-            Скачать для Android
-          </div>
-          <div class="download-offer__option  download-offer__option--windows">
-            Скачать для Windows
-          </div>
-          <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-          </p>
-        </div>
-      </div>
       <div class="advertisement  container">
         <p class="advertisement--descr">Устали от серости мегаполиса?</p>
         <p class="advertisement--descr">Нам есть, что вам предложить!</p>
       </div>
-      <div class="features container">
+      <div class="features">
+        <div class="container">
         <ul class="features__list">
           <li class="features__item">
             <span class="features__item-title">Поднимает настроение</span>
@@ -70,6 +80,7 @@
           </li>
         </ul>
         <div class="features__img">Всем привет!</div>
+      </div>
       </div>
       <div class="pseudo-science  container">
         <div class="pseudo-science__title">Эффект на 24 часа!</div>
@@ -107,7 +118,7 @@
           </div>
         </div>
       </div>
-      <div class="price container">
+      <div class="price">
         <div class="price__wrapper  slider">
           <div class="price__options">
             <div class="price__tariff" id="price-tariff1">
@@ -138,14 +149,14 @@
               <div class="price__tariff-descr  price__tariff-descr--incl">Комментарии</div>
             </div>
           </div>
-          <input class="slider__input" type="radio" name="price" id="price-input-1">
-          <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
-          <input class="slider__input" type="radio" name="price" id="price-input-3">
-          <div class="price__toggles  slider__toggles">
-           <label class="slider__toggle" for="feedback-input-1">1</label>
-           <label class="slider__toggle" for="feedback-input-2">2</label>
-           <label class="slider__toggle" for="feedback-input-3">3</label>
-          </div>
+        </div>
+        <input class="slider__input" type="radio" name="price" id="price-input-1">
+        <input class="slider__input" type="radio" name="price" id="price-input-2" checked>
+        <input class="slider__input" type="radio" name="price" id="price-input-3">
+        <div class="price__toggles  slider__toggles">
+         <label class="slider__toggle" for="feedback-input-1">1</label>
+         <label class="slider__toggle" for="feedback-input-2">2</label>
+         <label class="slider__toggle" for="feedback-input-3">3</label>
         </div>
       </div>
       <div class="contacts">

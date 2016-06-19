@@ -7,6 +7,7 @@
   box-sizing: border-box;
   background-color: $dark-bg-color;
   text-align: center;
+
   &__link {
     @include inline-block-top;
     vertical-align: baseline;
@@ -24,21 +25,32 @@
     border: 3px solid #ffffff;
     border-radius: 30px;
   }
+
   &__link:hover {
     color: $decoration-font-color;
     background-color: #ffffff;
   }
+
   &__link:active {
-    color: lighten($decoration-font-color, 30%);
+    color: rgba(210, 40, 86, 0.3);
   }
+
+  &__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   &__wrapper p {
+    margin-top: 23px;
+    margin-bottom: 10px;
     color: #ffffff;
     font-weight: 300;
-    font-size: 14px;
+    font-size: $basic-font-size;
     line-height: 24px;
   }
+
   &__option {
-    @include block;
+    @include inline-block-top;
     vertical-align: bottom;
     margin-left: 14px;
     margin-right: 14px;
@@ -47,16 +59,15 @@
     height: 60px;
     font-size: 0;
   }
-  &__wrapper p {
-    margin-top: 23px;
-    margin-bottom: 10px;
-  }
+
   &__option--ios {
     background: url("../img/logo-apple.svg") no-repeat bottom;
   }
+
   &__option--android {
     background: url("../img/logo-android.svg") no-repeat bottom;
   }
+
   &__option--windows {
     background: url("../img/logo-microsoft.svg") no-repeat bottom;
   }
