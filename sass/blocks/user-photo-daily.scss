@@ -39,21 +39,41 @@
     line-height: 24px;
   }
 
-  &__likes {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 30px;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: $decoration-font-color;
-  }
+
+
 
   & img {
     height: 138px;
-    width: 100%
+    width: 100%;
   }
 }
 
+.user-photo-daily__likes {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: $decoration-font-color;
+  position: relative;
+}
+
+.user-photo-daily__likes::after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 5px;
+  left: 3px;
+  background-image: url("../img/icon-heart.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.user-photo-daily__likes::before {
+  display: none;
+}
 
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
@@ -80,15 +100,6 @@
       order: -2;
     }
 
-    &__likes {
-      order: -1;
-      margin-left: auto;
-      min-width: 140px;
-      padding-left: 0;
-      padding-right: 20px;
-      box-sizing: border-box;
-    }
-
     &__comment {
       min-width: 500px;
       padding: 0;
@@ -99,6 +110,30 @@
       width: 100%;
     }
   }
+
+  .user-photo-daily__likes {
+    order: -1;
+    margin-left: auto;
+    min-width: 140px;
+    padding-left: 0;
+    padding-right: 20px;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+/*
+  .user-photo-daily__likes::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    right: 24px;
+    background-image: url("../img/icon-heart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
+  }*/
 }
 
 
@@ -132,6 +167,19 @@
       margin-left: auto;
       min-width: 150px;
       padding-left: 0;
+      position: relative;
+    }
+    &__likes::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 5px;
+      right: 24px;
+      background-image: url("../img/icon-heart.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 10;
     }
 
     &__comment {

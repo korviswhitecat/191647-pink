@@ -55,3 +55,14 @@
   }
 
 }
+
+@media (min-width: $desktop-widths) {
+  .upload-button {
+    width: 180px;
+    margin: 0;
+  }
+
+  .upload-button:last-child {
+    margin-right: 40px;
+  }
+}

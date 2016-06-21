@@ -16,7 +16,7 @@
     margin-top: 15px;
     padding-top: 3px;
   }
-
+/*
   &__copyright-link {
     @include inline-block-top;
     width: 27px;
@@ -24,7 +24,7 @@
     font-size: 0;
     background-image: url("../img/logo-htmlacademy.svg");
     margin-left: 15px;
-  }
+  }*/
 
   &__copyright-link-wrapper,
   &__developer {
@@ -73,6 +73,7 @@
 
     &__copyright-link-wrapper {
       margin-top: 5px;
+      margin-left: 10px;
     }
   }
 }

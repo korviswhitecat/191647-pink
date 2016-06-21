@@ -45,6 +45,20 @@
     font-size: 12px;
     text-transform: uppercase;
     color: #d22856;
+    position: relative;
+  }
+
+  &__likes::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 5px;
+    left: 0;
+    background-image: url("../img/icon-heart.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 10;
   }
 
   & img {
@@ -64,6 +78,20 @@
     &__likes {
       margin-top: auto;
       padding-left: 0;
+      position: relative;
+    }
+
+    &__likes::before {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 5px;
+      left: 225px;
+      background-image: url("../img/icon-heart.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      z-index: 10;
     }
 
     &__info-wrapper {
