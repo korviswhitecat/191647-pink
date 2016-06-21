@@ -4,6 +4,27 @@
   font-weight: normal;
   font-family: $font-family;
   font-size: 0;
+  position: relative;
+
+  &::before {
+    content: "Панорама дня";
+    width: 140px;
+    height: 30px;
+    display: block;
+    padding-top: 5px;
+    font-family: $font-family;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    right: 20px;
+    background: #d22856;
+    z-index: 10;
+  }
 
   &__info-wrapper {
     display: flex;
@@ -78,6 +99,11 @@
     align-items: center;
     margin-bottom: 30px;
 
+    &::before {
+      top: 57px;
+      right: 40px;
+    }
+
     &__info-wrapper {
       display: flex;
       flex-wrap: wrap;
@@ -138,6 +164,12 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 50px;
+
+    &::before {
+      top: 36px;
+      right: 130px;
+    }
+
 
     &__info-wrapper {
       display: flex;

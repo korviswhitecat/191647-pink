@@ -17,14 +17,18 @@
   &__tools {
     box-sizing: border-box;
     padding-top: $default-padding;
-    padding-left: $default-padding;
-    padding-right: $default-padding;
-    padding-bottom: $default-padding;
   }
+
+  &__tools--nojs {
+    background: $dark-bg-color;
+  }
+
   &__logo {
     @include inline-block-top;
     width: 100%;
     box-sizing: border-box;
+    padding-left: $default-padding;
+    padding-bottom: $default-padding;
   }
 
   &__promo {
@@ -133,6 +137,10 @@
     @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
     }
+  }
+
+  .main-header__tools--nojs {
+    background: transparent;
   }
 
   .main-header__tools {

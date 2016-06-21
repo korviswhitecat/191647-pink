@@ -15,6 +15,7 @@
 .main-nav__toggle {
   float: right;
   @include inline-block-top;
+  margin-right: 20px;
   width: 50px;
   height: 25px;
   font-size: 0;
@@ -34,6 +35,10 @@
   display: none;
 }
 
+.main-nav__list li {
+  background: $dark-bg-color;
+}
+
 .main-nav__current a,
 .main-nav__item a {
   color: #ffffff;
@@ -41,25 +46,6 @@
   @include inline-block-top;
   padding-top: 15px;
   padding-bottom: 15px;
-}
-
-.main-nav__item a:hover {
-  color: #ffffff;
-  border-bottom: 2px solid #ffffff;
-  padding-bottom: 13px;
-}
-
-.main-nav__current a:active,
-.main-nav__item a:active {
-  color: rgba(255, 255, 255, 0.3);
-  padding-bottom: 15px;
-  border-bottom: transparent;
-}
-
-.main-nav__current a:hover {
-  color: #d22856;
-  border-bottom: 2px solid #d22856;
-  padding-bottom: 13px;
 }
 
 
@@ -95,5 +81,38 @@
       text-transform: none;
       font-weight: 300;
     }
+
+    .main-nav__current a,
+    .main-nav__item a {
+      color: #ffffff;
+      text-decoration: none;
+      @include inline-block-top;
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .main-nav__item a:hover {
+      color: #ffffff;
+      border-bottom: 2px solid #ffffff;
+      padding-bottom: 13px;
+    }
+
+    .main-nav__current a:active,
+    .main-nav__item a:active {
+      color: rgba(255, 255, 255, 0.3);
+      padding-bottom: 15px;
+      border-bottom: transparent;
+    }
+
+    .main-nav__current a:hover {
+      color: #d22856;
+      border-bottom: 2px solid #d22856;
+      padding-bottom: 13px;
+    }
+
+    .main-nav__list li {
+      background: transparent;
+    }
+
   }
 }
