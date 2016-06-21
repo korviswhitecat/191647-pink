@@ -39,11 +39,8 @@
     line-height: 24px;
   }
 
-
-
-
   & img {
-    height: 138px;
+    height: 138%;
     width: 100%;
   }
 }
@@ -58,7 +55,7 @@
   position: relative;
 }
 
-.user-photo-daily__likes::after {
+.user-photo-daily__likes::before {
   content: "";
   position: absolute;
   width: 15px;
@@ -71,9 +68,6 @@
   z-index: 10;
 }
 
-.user-photo-daily__likes::before {
-  display: none;
-}
 
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
@@ -121,8 +115,7 @@
     position: relative;
   }
 
-/*
-  .user-photo-daily__likes::after {
+  .user-photo-daily__likes::before {
     content: "";
     position: absolute;
     width: 15px;
@@ -133,7 +126,7 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 10;
-  }*/
+  }
 }
 
 

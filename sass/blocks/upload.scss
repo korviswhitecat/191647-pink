@@ -21,7 +21,20 @@
 
   &__range-tool {
     cursor: pointer;
+    position: relative;
   }
+
+  &__range-tool::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    top: 34px;
+    left: -38px;
+    background: rgba(40, 54, 69, 0.1);
+    z-index: 10;
+  }
+
 
   &__range-tool:nth-child(n+2) {
     display: none;
@@ -170,6 +183,22 @@
       padding: 0;
     }
 
+    &__range-tool {
+      cursor: pointer;
+      position: relative;
+    }
+
+    &__range-tool::before {
+      content: "";
+      position: absolute;
+      width: 275px;
+      height: 1px;
+      top: 34px;
+      left: -55px;
+      background: rgba(40, 54, 69, 0.1);
+      z-index: 10;
+    }
+
     &__range-tool:nth-child(n+2) {
       display: inline-block;
     }
@@ -259,6 +288,7 @@
       margin: 0;
     }
 
+
     &__filter-tool:nth-child(2) {
       margin-top: 28px;
     }
@@ -272,6 +302,22 @@
       flex-direction: column;
       width: 290px;
     }
+
+    &__range-tool {
+      position: relative;
+    }
+
+    &__range-tool::before {
+      content: "";
+      position: absolute;
+      width: 410px;
+      height: 1px;
+      top: 34px;
+      left: -92px;
+      background: rgba(40, 54, 69, 0.1);
+      z-index: 10;
+    }
+
 
     &__range-tool:nth-child(n+2) {
       display: inline-block;

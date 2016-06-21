@@ -16,19 +16,28 @@
     margin-top: 15px;
     padding-top: 3px;
   }
-/*
-  &__copyright-link {
-    @include inline-block-top;
-    width: 27px;
-    height: 34px;
-    font-size: 0;
-    background-image: url("../img/logo-htmlacademy.svg");
-    margin-left: 15px;
-  }*/
+
+  &__copyright-link-wrapper {
+    margin-top: 5px;
+    margin-left: 10px;
+  }
 
   &__copyright-link-wrapper,
   &__developer {
     @include inline-block-top;
+  }
+
+  &__img {
+    width: 27px;
+    height: 35px;
+  }
+
+  &__img:hover {
+    fill: #283645;
+  }
+
+  &__img:active {
+    opacity: 0.3;
   }
 }
 
@@ -69,11 +78,6 @@
       margin-top: 0;
       padding-top: 0;
       font-size: $basic-desktop-font-size;
-    }
-
-    &__copyright-link-wrapper {
-      margin-top: 5px;
-      margin-left: 10px;
     }
   }
 }

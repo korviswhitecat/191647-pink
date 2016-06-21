@@ -34,12 +34,32 @@
   display: none;
 }
 
+.main-nav__current a,
 .main-nav__item a {
   color: #ffffff;
   text-decoration: none;
   @include inline-block-top;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.main-nav__item a:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+  padding-bottom: 13px;
+}
+
+.main-nav__current a:active,
+.main-nav__item a:active {
+  color: rgba(255, 255, 255, 0.3);
+  padding-bottom: 15px;
+  border-bottom: transparent;
+}
+
+.main-nav__current a:hover {
+  color: #d22856;
+  border-bottom: 2px solid #d22856;
+  padding-bottom: 13px;
 }
 
 
@@ -70,7 +90,7 @@
       justify-content: space-between;
       align-items: center;
     }
-    
+    &__current a,
     &__item a {
       text-transform: none;
       font-weight: 300;

@@ -25,8 +25,8 @@
                   <li class="main-nav__item">
                     <a href="index.html">Главная</a>
                   </li>
-                  <li class="main-nav__item">
-                    <a>Фотографии</a>
+                  <li class="main-nav__current">
+                    <a href="photo.html">Фотографии</a>
                   </li>
                   <li class="main-nav__item">
                     <a href="form.html">Конкурс</a>
@@ -216,9 +216,13 @@
     </main>
     <footer class="main-footer  container">
       <div class="main-footer-logo">
-        <picture>
-        <img src="img/logo-pink-blue-mobile.svg" alt="Выбирай Pink!">
-        </picture>
+        <a href="index.html">
+          <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
+          <source media="(min-width: 700px)" srcset="img/logo-pink-blue-tablet.svg">
+          <img src="img/logo-pink-blue-mobile.svg" alt="Фото пользователя Pink">
+          </picture>
+        </a>
       </div>
       <div class="main-footer__social">
         <span class="social-networks">
@@ -229,7 +233,7 @@
       </div>
       <div class="main-footer__copyright">
         <div class="main-footer__developer">Разработано</div>
-        <div class="main-footer__copyright-link-wrapper"><a class="main-footer__copyright-link" href="https://htmlacademy.ru/"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+        <div class="main-footer__copyright-link-wrapper"><a class="main-footer__copyright-link" href="https://htmlacademy.ru/"><svg class="main-footer__img" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         	 width="26.943px" height="34.09px" fill="#d22856" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve">
         <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.472,8.017l13.43-7.99l0.042-0.026V1.412L13.62,0.017z M25.019,12.127L13.495,5.334
         	l-0.001-0.104L13.407,5.28l-0.088-0.056v0.109L1.925,12.118V3.147l11.547-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5
