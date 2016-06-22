@@ -40,6 +40,22 @@
   display: none;
 }
 
+.feedback__wrapper label {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border: 3px solid #ffffff;
+  background: #bec2c7;
+  font-size: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#feedback-input-1:checked ~ .feedback__wrapper label[for="feedback-input-1"],
+#feedback-input-2:checked ~ .feedback__wrapper label[for="feedback-input-2"],
+#feedback-input-2:checked ~ .feedback__wrapper label[for="feedback-input-3"] {
+  background: #ffffff;
+}
 
 
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {

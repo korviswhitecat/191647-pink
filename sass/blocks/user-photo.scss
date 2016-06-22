@@ -82,16 +82,8 @@
     }
 
     &__likes::before {
-      content: "";
-      position: absolute;
-      width: 15px;
-      height: 15px;
       top: 5px;
       left: 225px;
-      background-image: url("../img/icon-heart.svg");
-      background-position: center;
-      background-repeat: no-repeat;
-      z-index: 10;
     }
 
     &__info-wrapper {
@@ -122,6 +114,12 @@
     &__likes {
       margin-top: auto;
       padding-left: 0;
+      position: relative;
+    }
+
+    &__likes::before {
+      top: 5px;
+      left: 230px;
     }
 
     &__info-wrapper {

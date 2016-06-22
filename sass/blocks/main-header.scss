@@ -3,12 +3,11 @@
   background: #2b3848;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: fixed;
   background-size: cover;
   @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
-    background-image: url("../img/bg-back-desktop@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
-
 
   &__wrapper {
     background: rgba(0, 0, 0, 0.3);

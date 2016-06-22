@@ -91,6 +91,11 @@
   .download-offer {
     background: transparent;
     margin-left: 40px;
+
+    &__option--android {
+      background: url("../img/logo-android.svg") no-repeat bottom;
+      opacity: 0.4;
+    }
   }
 
   .download-offer__wrapper {
@@ -103,12 +108,13 @@
 
   .download-offer__img {
     position: absolute;
-    width: 260px;
-    height: 290px;
+    width: 470px;
+    height: 550px;
     top: -150px;
-    left: 400px;
-    background: url("../img/iphone-hand-mobile@1x.png");
+    left: 100px;
+    background: url("../img/iphone-hand-tablet@1x.png");
     background-repeat: no-repeat;
+    z-index: 10;
   }
 
 }

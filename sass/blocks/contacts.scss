@@ -63,6 +63,22 @@
   font-size: 0;
 }
 
+.contacts__options {
+  position: relative;
+
+}
+
+.contacts__options:last-child::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 100px;
+  top: 62px;
+  left: -30px;
+  background: url("../img/bg-triangle-white-footer.svg") no-repeat center;
+  z-index: 10;
+}
+
 @media (min-width: $tablet-widths) and (max-width: $desktop-widths) {
   .contacts__title {
     font-size: 40px;

@@ -22,6 +22,8 @@
   border: 0;
   cursor: pointer;
   background: url("../img/icon-menu-burger.svg") no-repeat right;
+  background-size: 90%;
+  outline: none;
 }
 
 .main-nav--opened {
@@ -39,12 +41,23 @@
   background: $dark-bg-color;
 }
 
+.main-nav__item {
+  box-shadow: 0 1px 0 0 #000000;
+  margin-bottom: 1px;
+  min-height: 60px;
+}
+
+.main-nav__item:first-child {
+ box-shadow: 0 1px 0 0 #000000, 0 -1px 0 0 #000000;
+
+}
+
 .main-nav__current a,
 .main-nav__item a {
   color: #ffffff;
   text-decoration: none;
   @include inline-block-top;
-  padding-top: 15px;
+  padding-top: 16px;
   padding-bottom: 15px;
 }
 

@@ -44,6 +44,9 @@
     height: 280px;
     font-size: 0;
     background: url("../img/iphone-screen-mobile@1x.png") no-repeat top;
+    @media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+      background-image: url("../img/iphone-screen-mobile@2x.jpg");
+    }
   }
 
 }
